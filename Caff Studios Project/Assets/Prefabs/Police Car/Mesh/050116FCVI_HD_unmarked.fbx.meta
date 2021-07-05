@@ -1,0 +1,150 @@
+fileFormatVersion: 2
+guid: b13ec06f87250954493cb84ca985c254
+timeCreated: 1463608250
+licenseType: Store
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: body
+    100004: dial fuel
+    100006: dial speedo
+    100008: dial tach
+    100010: interior
+    100012: license plates front
+    100014: license plates rear
+    100016: mirror
+    100018: mirror lft
+    100020: mirror rt
+    100022: steering wheel
+    100024: Whl HD RL
+    100026: Whl HD RR
+    100028: Whl HD_FL
+    100030: Whl HD_FR
+    400000: //RootNode
+    400002: body
+    400004: dial fuel
+    400006: dial speedo
+    400008: dial tach
+    400010: interior
+    400012: license plates front
+    400014: license plates rear
+    400016: mirror
+    400018: mirror lft
+    400020: mirror rt
+    400022: steering wheel
+    400024: Whl HD RL
+    400026: Whl HD RR
+    400028: Whl HD_FL
+    400030: Whl HD_FR
+    2300000: body
+    2300002: dial fuel
+    2300004: dial speedo
+    2300006: dial tach
+    2300008: interior
+    2300010: license plates front
+    2300012: license plates rear
+    2300014: mirror
+    2300016: mirror lft
+    2300018: mirror rt
+    2300020: steering wheel
+    2300022: Whl HD RL
+    2300024: Whl HD RR
+    2300026: Whl HD_FL
+    2300028: Whl HD_FR
+    3300000: body
+    3300002: dial fuel
+    3300004: dial speedo
+    3300006: dial tach
+    3300008: interior
+    3300010: license plates front
+    3300012: license plates rear
+    3300014: mirror
+    3300016: mirror lft
+    3300018: mirror rt
+    3300020: steering wheel
+    3300022: Whl HD RL
+    3300024: Whl HD RR
+    3300026: Whl HD_FL
+    3300028: Whl HD_FR
+    4300000: body
+    4300002: Whl HD RR
+    4300004: Whl HD_FR
+    4300006: interior
+    4300008: steering wheel
+    4300010: mirror
+    4300012: mirror rt
+    4300014: mirror lft
+    4300016: Whl HD RL
+    4300018: Whl HD_FL
+    4300020: dial tach
+    4300022: dial speedo
+    4300024: dial fuel
+    4300026: license plates rear
+    4300028: license plates front
+    7400000: modo_Anim
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

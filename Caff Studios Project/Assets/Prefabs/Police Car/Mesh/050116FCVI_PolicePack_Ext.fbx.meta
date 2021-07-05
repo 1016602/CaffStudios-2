@@ -1,0 +1,120 @@
+fileFormatVersion: 2
+guid: da1c27760d0e2484282c1baa2b5ac90d
+timeCreated: 1462675898
+licenseType: Store
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: antenae
+    100004: bumper bar lights
+    100006: bumper bars
+    100008: light lft
+    100010: light rt
+    100012: mirror lights
+    100014: spotlight  rt
+    100016: spotlight lft
+    100018: top light bar
+    400000: //RootNode
+    400002: antenae
+    400004: bumper bar lights
+    400006: bumper bars
+    400008: light lft
+    400010: light rt
+    400012: mirror lights
+    400014: spotlight  rt
+    400016: spotlight lft
+    400018: top light bar
+    2300000: antenae
+    2300002: bumper bar lights
+    2300004: bumper bars
+    2300006: light lft
+    2300008: light rt
+    2300010: mirror lights
+    2300012: spotlight  rt
+    2300014: spotlight lft
+    2300016: top light bar
+    3300000: antenae
+    3300002: bumper bar lights
+    3300004: bumper bars
+    3300006: light lft
+    3300008: light rt
+    3300010: mirror lights
+    3300012: spotlight  rt
+    3300014: spotlight lft
+    3300016: top light bar
+    4300000: bumper bars
+    4300002: top light bar
+    4300004: antenae
+    4300006: spotlight lft
+    4300008: light lft
+    4300010: mirror lights
+    4300012: bumper bar lights
+    4300014: spotlight  rt
+    4300016: light rt
+    7400000: modo_Anim
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
