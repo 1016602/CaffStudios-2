@@ -19,7 +19,7 @@ public class k_Handcuffs : MonoBehaviour
             if (Input.GetButtonDown("Fire1"))
             {
                 Debug.Log("OK");
-                other.gameObject.GetComponent<k_EnemyState>().chAction = true;
+                other.gameObject.GetComponent<k_EnemyStatsUI>().chAction = true;
             }
         }     
     }

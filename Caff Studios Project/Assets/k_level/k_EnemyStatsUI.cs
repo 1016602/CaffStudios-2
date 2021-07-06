@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-public class k_EnemyState : MonoBehaviour
+public class k_EnemyStatsUI : MonoBehaviour
 {
     public GameObject handcuffBarUI;
     public Image handcuffBar;
@@ -42,7 +42,7 @@ public class k_EnemyState : MonoBehaviour
 
             handcuffBarUI.SetActive(true);
 
-            if (chTime > 0) ;
+            if (chTime > 0) 
             {
                 chTime -= 1 * Time.deltaTime;
                 print(chTime);
