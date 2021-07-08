@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class k_popupTraining : MonoBehaviour
 {
@@ -11,12 +13,16 @@ public class k_popupTraining : MonoBehaviour
     private GameObject targetB;
 
 
+    //message board
+    public TMP_Text message;
+
+
     public float spwanTime;
-    public int score;
     float currentTime = 0f;
 
     void Start()
     {
+       
         currentTime = spwanTime;
     }
 
