@@ -53,7 +53,7 @@ public class k_EnemyStatsUI : MonoBehaviour
                 Handcuff_Fail();
             }
 
-            if (Input.GetKeyDown(KeyCode.P))
+            if (Input.GetKeyDown(KeyCode.C))
             {
                 currentHcLevel += 1f;
             }
