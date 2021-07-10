@@ -9,6 +9,18 @@ EditorBuildSettings:
     path: Assets/Scenes/Main Menu.unity
     guid: 376130c7ab7e20349b71249c0fd8b07b
   - enabled: 1
-    path: Assets/k_level/level_test.unity
+    path: Assets/Scenes/level_test.unity
     guid: f34323d50d2625a4baeeb61797b68f41
+  - enabled: 1
+    path: Assets/Scenes/Mission Brief_Tutorial.unity
+    guid: 009f3daaf2f926f44a0fea927392bb67
+  - enabled: 1
+    path: Assets/Scenes/Tutorial Mission.unity
+    guid: 2de0f0677410eab47943716578171795
+  - enabled: 1
+    path: Assets/Scenes/Game Over.unity
+    guid: fc71751e777076e48905e5afbadcd725
+  - enabled: 1
+    path: Assets/Scenes/Result.unity
+    guid: 0b520b0c827e49a46815fa0a5d02c910
   m_configObjects: {}
