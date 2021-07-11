@@ -1088,8 +1088,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 770d55e4bfb4e5f4fb90307714e45b67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
   fpsCam: {fileID: 682717633}
   description: {fileID: 1013082048}
+=======
+  damage: 10
+  range: 100
+  fireRate: 15
+  fpsCam: {fileID: 2010912168}
+>>>>>>> parent of 101797fe (Gun sounds)
 --- !u!1001 &64550578
 PrefabInstance:
   m_ObjectHideFlags: 0
