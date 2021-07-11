@@ -1404,6 +1404,22 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2570896117476170660, guid: 64ccd7a5ad0e82641b1def23f45ecf26, type: 3}
   m_PrefabInstance: {fileID: 6806959423643423374}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &61867169
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 61867167}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f87c0f79d5eff94db54b52a6d295b60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
+  range: 100
+  fireRate: 15
+  fpsCam: {fileID: 2010912168}
 --- !u!1001 &64550578
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26360,6 +26376,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 15ade3351e690ac42bf70b828a6fceed, type: 3}
+--- !u!20 &2010912168 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 2569624386916670996, guid: 64ccd7a5ad0e82641b1def23f45ecf26, type: 3}
+  m_PrefabInstance: {fileID: 6806959423643423374}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2014128172 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 443579786554589049, guid: 15ade3351e690ac42bf70b828a6fceed, type: 3}
@@ -28990,7 +29011,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: FPS + gun
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2569624386915425333, guid: 64ccd7a5ad0e82641b1def23f45ecf26, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 64ccd7a5ad0e82641b1def23f45ecf26, type: 3}
 --- !u!4 &7541423130662629904
 Transform:
