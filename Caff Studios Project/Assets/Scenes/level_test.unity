@@ -1088,8 +1088,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 770d55e4bfb4e5f4fb90307714e45b67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< Updated upstream
   fpsCam: {fileID: 682717633}
   description: {fileID: 1013082048}
+=======
+  damage: 10
+  range: 100
+  fireRate: 3
+  gunShot: {fileID: 441168900}
+  fpsCam: {fileID: 2010912168}
+  muzzleFlash: {fileID: 19800004, guid: 30b4cc2728d8cec499fad63ba93785a4, type: 3}
+  impactEffect: {fileID: 100002, guid: 00fedc70b62a31e448e8ccc298257b56, type: 3}
+>>>>>>> Stashed changes
 --- !u!1001 &64550578
 PrefabInstance:
   m_ObjectHideFlags: 0
