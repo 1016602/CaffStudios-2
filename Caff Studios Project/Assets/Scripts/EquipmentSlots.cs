@@ -17,13 +17,16 @@ public class EquipmentSlots : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
             equiptmentSlot1.SetActive(true);
-            gun.SetActive(true);
+            hand.SetActive(true);
+
             equiptmentSlot2.SetActive(false);
             equiptmentSlot3.SetActive(false);
-            equiptmentSlot4.SetActive(false);
             taser.SetActive(false);
             handcuff.SetActive(false);
-            hand.SetActive(false);
+
+            equiptmentSlot4.SetActive(false);
+            gun.SetActive(false);
+
         }
 
         if (Input.GetKeyDown(KeyCode.Alpha2))
@@ -53,13 +56,15 @@ public class EquipmentSlots : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Alpha4))
         {
             equiptmentSlot1.SetActive(false);
-            gun.SetActive(false);
+            hand.SetActive(false);
+
             equiptmentSlot2.SetActive(false);
             equiptmentSlot3.SetActive(false);
             taser.SetActive(false);
             handcuff.SetActive(false);
+
             equiptmentSlot4.SetActive(true);
-            hand.SetActive(true);
+            gun.SetActive(true);
         }
     }
 }
