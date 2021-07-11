@@ -59,10 +59,6 @@ public class k_rayhit_test : MonoBehaviour
                 description.text = "You kill an citizen!";
             }
 
-            if (hit.collider.gameObject.name == "Training model (1)")
-            {
-                hit.collider.gameObject.GetComponent<k_EnemyStatsUI>().stuning = true;
-            }
         }
     }
 }
