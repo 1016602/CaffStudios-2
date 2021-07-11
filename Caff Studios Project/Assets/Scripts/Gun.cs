@@ -13,6 +13,8 @@ public class Gun : MonoBehaviour
    public ParticleSystem muzzleFlash;
    public GameObject impactEffect;
 
+    RaycastHit hit;
+
     private float nextTimeToFire = 0f;
     void Update()
     {
@@ -22,6 +24,16 @@ public class Gun : MonoBehaviour
             Shoot();
         }
 
+        if (Input.GetKeyDown("f"))
+        {
+            print("attempted shout");
+            
+            if (Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, range))
+            {
+                print("Shout Heard");
+                hit.transform.gameObject.SendMessage("Command", SendMessageOptions.DontRequireReceiver);
+            }
+        }
     }
 
     void Shoot()
