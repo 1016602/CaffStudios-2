@@ -7,6 +7,7 @@ public class Gun : MonoBehaviour
     public float damage = 10f;
     public float range = 100f;
     public float fireRate = 15f;
+    public AudioSource gunShot;
 
     public Camera fpsCam;
     //public ParticleSystem muzzleFlash;
@@ -26,6 +27,7 @@ public class Gun : MonoBehaviour
     void Shoot()
     {
         //muzzleFlash.Play();
+        gunShot.Play();
 
         RaycastHit hit;
         if
