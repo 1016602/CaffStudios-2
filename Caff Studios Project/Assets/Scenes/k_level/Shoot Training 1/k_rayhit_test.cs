@@ -8,7 +8,7 @@ using TMPro;
 public class k_rayhit_test : MonoBehaviour
 {
     public Camera fpsCam;
-    public TMP_Text position;
+    //public TMP_Text position;
     public TMP_Text description;
 
 
@@ -18,7 +18,6 @@ public class k_rayhit_test : MonoBehaviour
         
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (Input.GetButtonDown("Fire1"))
@@ -37,20 +36,32 @@ public class k_rayhit_test : MonoBehaviour
 
             if (hit.collider.gameObject.name == "Body")
             {
-                position.text = "Body";
-                description.text = "Injure target";
+                description.text = "Body: Injure target.";
             }
 
             if (hit.collider.gameObject.name == "Head")
             {
-                position.text = "Headshot";
-                description.text = "Object die, panic level and stress level rise++";
+                description.text = "Headshot: Object die, panic level and stress level rise++.";
             }
 
             if (hit.collider.gameObject.name == "Arm_weapon")
             {
-                position.text = "Arm (with weapon)";
-                description.text = "Injure target and the target drop the weapon";
+                description.text = "Arm (with weapon): Injure target and the target drop the weapon.";
+            }
+
+            if (hit.collider.gameObject.name == "Leg")
+            {
+                description.text = "Leg: Injure target and target cannot move.";
+            }
+
+            if (hit.collider.gameObject.name == "Innocence")
+            {
+                description.text = "You kill an citizen!";
+            }
+
+            if (hit.collider.gameObject.name == "Training model (1)")
+            {
+                hit.collider.gameObject.GetComponent<k_EnemyStatsUI>().stuning = true;
             }
         }
     }

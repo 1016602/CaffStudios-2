@@ -368,7 +368,7 @@ GameObject:
   - component: {fileID: 7541007802361231658}
   - component: {fileID: 717421536469769693}
   m_Layer: 0
-  m_Name: Waepon
+  m_Name: Arm_weapon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1207,20 +1207,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c2b0aedf0d62bd4db3432cb27ffeb5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  position: {fileID: 0}
-  description: {fileID: 0}
-  image: {fileID: 0}
-  popImage: []
-  head: {fileID: 0}
-  weaponHand: {fileID: 0}
-  body: {fileID: 0}
-  leg: {fileID: 0}
-  arm: {fileID: 0}
-  _head: 0
-  _weaponhand: 0
-  _body: 0
-  _leg: 0
-  _arm: 0
+  message: {fileID: 0}
 --- !u!1 &8561074356877161698
 GameObject:
   m_ObjectHideFlags: 0
