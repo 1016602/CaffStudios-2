@@ -10,8 +10,8 @@ public class Gun : MonoBehaviour
     public AudioSource gunShot;
 
     public Camera fpsCam;
-    //public ParticleSystem muzzleFlash;
-   // public GameObject impactEffect;
+   public ParticleSystem muzzleFlash;
+   public GameObject impactEffect;
 
     private float nextTimeToFire = 0f;
     void Update()
@@ -26,7 +26,7 @@ public class Gun : MonoBehaviour
 
     void Shoot()
     {
-        //muzzleFlash.Play();
+        muzzleFlash.Play();
         gunShot.Play();
 
         RaycastHit hit;
@@ -41,8 +41,8 @@ public class Gun : MonoBehaviour
                 target.TakeDamage(damage);
             }
 
-            //GameObject impactGo = Instantiate(impactEffect, hit.point, Quaternion.LookRotation(hit.normal));
-           // Destroy(impactGo, 2f);
+           GameObject impactGo = Instantiate(impactEffect, hit.point, Quaternion.LookRotation(hit.normal));
+           Destroy(impactGo, 2f);
         }
     }
 }

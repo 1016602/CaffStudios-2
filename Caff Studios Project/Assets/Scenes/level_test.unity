@@ -1107,6 +1107,8 @@ MonoBehaviour:
   fireRate: 3
   gunShot: {fileID: 597278805}
   fpsCam: {fileID: 682717633}
+  muzzleFlash: {fileID: 19800006, guid: c888f0c922d622147bbdbe2ca794142b, type: 3}
+  impactEffect: {fileID: 100002, guid: 00fedc70b62a31e448e8ccc298257b56, type: 3}
 --- !u!1001 &64550578
 PrefabInstance:
   m_ObjectHideFlags: 0
