@@ -28693,6 +28693,10 @@ PrefabInstance:
       propertyPath: handcuff
       value: 
       objectReference: {fileID: 679482063}
+    - target: {fileID: 2926250439395806023, guid: 7cd919bdcc1780942858c9745a383b88, type: 3}
+      propertyPath: m_Volume
+      value: 0.03
+      objectReference: {fileID: 0}
     - target: {fileID: 2926250439402737949, guid: 7cd919bdcc1780942858c9745a383b88, type: 3}
       propertyPath: m_AnchorMax.x
       value: 1
