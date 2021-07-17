@@ -4,10 +4,11 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-public class k_PlayerStats : MonoBehaviour
+public class k_PlayerState : MonoBehaviour
 {
     public TMP_Text inGameMessage;
 
+    public bool warning, taserWarning, shootingWarning;
 
 
     void Start()

@@ -5,6 +5,8 @@ using UnityEngine;
 public class Shout : MonoBehaviour
 {
     public Camera fpsCam;
+    public GameObject fpc;
+
     RaycastHit hit;
     void Update()
     {
@@ -16,6 +18,7 @@ public class Shout : MonoBehaviour
             {
                 print("Shout Heard");
                 hit.transform.gameObject.SendMessage("Command", SendMessageOptions.DontRequireReceiver);
+                fpc.GetComponent<k_PlayerState>().taserWarning = true;
             }
         }
     }
