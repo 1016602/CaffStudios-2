@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using MissionCheckList;
 
 public class Gun : MonoBehaviour
 {
@@ -10,10 +11,12 @@ public class Gun : MonoBehaviour
     public AudioSource gunShot;
 
     public Camera fpsCam;
-   public ParticleSystem muzzleFlash;
-   public GameObject impactEffect;
+    public ParticleSystem muzzleFlash;
+    public GameObject impactEffect;
 
-    
+    public GameObject checkList;
+
+
 
     private float nextTimeToFire = 0f;
     void Update()
@@ -22,6 +25,8 @@ public class Gun : MonoBehaviour
         {
             nextTimeToFire = Time.time + 1f / fireRate;
             Shoot();
+
+            checkList.GetComponent<_TutorCheckList>().gunShoot = true;
         }
 
         
