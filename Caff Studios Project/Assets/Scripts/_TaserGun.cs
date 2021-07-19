@@ -36,7 +36,7 @@ public class _TaserGun : MonoBehaviour
         RaycastHit hit;
         if (Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, range))
         {
-            if (hit.collider.gameObject.name == "Training model (1)")
+            if (hit.collider.gameObject.tag == "Enemy")
             {
                 hit.collider.gameObject.GetComponent<k_EnemyStatsUI>().stuning = true;
                 GameObject impactGo = Instantiate(impactEffect, hit.point, Quaternion.LookRotation(hit.normal));
