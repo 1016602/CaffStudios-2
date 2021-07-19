@@ -7,13 +7,16 @@ using TMPro;
 public class k_PlayerState : MonoBehaviour
 {
     public TMP_Text inGameMessage;
+    public float playerHealth;
+    public float currentHealth;
+
 
     public bool warning, taserWarning, shootingWarning;
 
 
     void Start()
     {
-
+        currentHealth = playerHealth;
     }
 
 

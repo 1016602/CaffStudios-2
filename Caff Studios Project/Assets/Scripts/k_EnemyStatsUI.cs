@@ -12,7 +12,7 @@ public class k_EnemyStatsUI : MonoBehaviour
     public float maxHcLevel;
 
     public TMP_Text stunTimer;
-    float stunTime = 5f;
+    float stunTime = 8f;
 
     public bool stuning, chAction, arrested;
 
@@ -28,10 +28,8 @@ public class k_EnemyStatsUI : MonoBehaviour
         chTime = startingTime;
 
         anim = GetComponent<Animator>();
-
     }
 
-    // Update is called once per frame
     void Update()
     {
 
@@ -81,12 +79,14 @@ public class k_EnemyStatsUI : MonoBehaviour
 
     void Handcuff_Success()
     {
-        anim.SetBool("Handcuffing", false);
-        anim.SetTrigger("Arrest");
         handcuffBarUI.SetActive(false);
         chAction = false;
         Start();
         arrested = true;
+
+        anim.SetBool("Stun", false);
+        anim.SetBool("Handcuffing", false);
+        anim.SetBool("Arrest", true);
     }
 
     void Stun()
@@ -99,7 +99,12 @@ public class k_EnemyStatsUI : MonoBehaviour
             anim.SetBool("Stun", false);
             stunTimer.text = ("");
             stuning = false;
-            stunTime = 5f;
+            stunTime = 8f;
+        }
+
+        if (chAction)
+        {
+            Handcuff_Success();
         }
     }
 

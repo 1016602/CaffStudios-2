@@ -18,7 +18,7 @@ public class _TutorAI : MonoBehaviour
     private Transform playerPoint;
 
     public GameObject checkList;
-
+    public GameObject playerObject;
 
     public Animator anim;
     private Animator anim1;
@@ -52,7 +52,10 @@ public class _TutorAI : MonoBehaviour
             if (distanceToPlayer.magnitude > 3f) AttackIdle();
         }
         
-        if (escape) { Escape(); }
+        if (playerObject.GetComponent<k_PlayerState>().currentHealth <= 70) { RunToExit(); }
+
+        Vector3 distanceToExit = transform.position - walkPoint2.transform.position;
+        if (distanceToExit.magnitude < 0.2f) { AttackIdle(); escape = true; }
 
     }
 
@@ -86,10 +89,13 @@ public class _TutorAI : MonoBehaviour
         transform.LookAt(playerPoint);
     }
 
-    public void Escape()
+    public void RunToExit()
     {
+        anim.SetBool("Running", true);
+        anim.SetBool("Attacking", false);
         agent.SetDestination(walkPoint2.transform.position);
     }
+
 
     void OnDrawGizmos()
     {

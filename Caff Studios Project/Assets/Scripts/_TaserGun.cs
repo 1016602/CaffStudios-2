@@ -24,7 +24,7 @@ public class _TaserGun : MonoBehaviour
     {
         if (Input.GetButtonDown("Fire1") && Time.time >= nextTimeToFire)
         {
-            nextTimeToFire = Time.time + 1f / fireRate;
+            nextTimeToFire = Time.time + fireRate;
             FireTaser();
         }
     }
