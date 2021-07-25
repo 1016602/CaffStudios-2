@@ -6,14 +6,14 @@ public class PlayerGun : MonoBehaviour
 {
     
 
-    int mag;
-    public Material Material1;
+    static public int mag;
+    public int magSize;
     public GameObject pistol;
-    Animator anim;
+    static Animator anim;
     RaycastHit hit;
     void Start()
     {
-        mag = 5;
+        mag = magSize;
         anim = pistol.GetComponent<Animator>();
     }
 
@@ -26,7 +26,7 @@ public class PlayerGun : MonoBehaviour
         {
             if(mag != 0)
             {
-                Shoot();
+                //Fire(); // Triggering now handled by gun.cs
             }
             else
             {
@@ -36,7 +36,7 @@ public class PlayerGun : MonoBehaviour
         }
         if (Input.GetKeyDown("r"))
         {
-            if (mag != 5)
+            if (mag != magSize)
             {
                 {
                     anim.SetTrigger("Reloading");
@@ -46,7 +46,7 @@ public class PlayerGun : MonoBehaviour
                     {
                         print("chk");
                     }
-                    mag = 5;
+                    mag = magSize;
                 }
             }
             else
@@ -55,20 +55,10 @@ public class PlayerGun : MonoBehaviour
             }
         }
 
-        //shouting commands
-        if (Input.GetKeyDown("f"))
-        {
-            print("attempted shout");
-            Ray ray = GetComponent<Camera>().ScreenPointToRay(Input.mousePosition);
-            if (Physics.Raycast(ray, out hit))
-            {
-                print("Shout Heard");
-                hit.transform.gameObject.SendMessage("Command", SendMessageOptions.DontRequireReceiver);
-           }
-        }
+
     }
     //--------------------------------------------------------------
-    void Shoot()
+    public static void Fire()
     {
         print("Bang!");
         mag = mag - 1;
@@ -84,14 +74,14 @@ public class PlayerGun : MonoBehaviour
         }
         
         
-        Ray ray = GetComponent<Camera>().ScreenPointToRay(Input.mousePosition);
+       /* Ray ray = GetComponent<Camera>().ScreenPointToRay(Input.mousePosition);
 
         if (Physics.Raycast(ray, out hit))
         {
             //hit.transform.gameObject.GetComponent<Renderer>().material = Material1; - testing artefact, turns walls green otherwise
             //In future, placing a bullet hole decal at the raycast hit
             print("hit something");
-        }
+        }*/
     }
 
 

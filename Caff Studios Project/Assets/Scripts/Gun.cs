@@ -19,14 +19,23 @@ public class Gun : MonoBehaviour
 
 
     private float nextTimeToFire = 0f;
+
+    void Start()
+    {
+        PlayerGun playerGun = GetComponent<PlayerGun>();
+    }
     void Update()
     {
         if (Input.GetButtonDown("Fire1") && Time.time >= nextTimeToFire)
         {
-            nextTimeToFire = Time.time + 1f / fireRate;
-            Shoot();
+            if (PlayerGun.mag != 0)
+            {
+                nextTimeToFire = Time.time + 1f / fireRate;
+                Shoot();
+                PlayerGun.Fire();
 
-            checkList.GetComponent<_TutorCheckList>().gunShoot = true;
+                checkList.GetComponent<_TutorCheckList>().gunShoot = true;
+            }
         }
 
         
