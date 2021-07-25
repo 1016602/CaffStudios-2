@@ -7,6 +7,8 @@ using TMPro;
 public class k_PlayerStatsUI : MonoBehaviour
 {
     public TMP_Text inGameMessage;
+    public GameObject playerC;
+
 
     public Image HealthBar;
     public float currentHealth;
@@ -20,6 +22,8 @@ public class k_PlayerStatsUI : MonoBehaviour
     public float currentPanic;
     public float maxPanic;
 
+    
+    
     void Start()
     {
         currentHealth = maxHealth;
@@ -30,6 +34,9 @@ public class k_PlayerStatsUI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        currentHealth = playerC.GetComponent<k_PlayerState>().currentHealth;
+
         HealthBar.fillAmount = currentHealth / maxHealth;
         if (currentHealth >= maxHealth)
         {
@@ -55,19 +62,5 @@ public class k_PlayerStatsUI : MonoBehaviour
         }
     }
 
-    public void Damage(float damage)
-    {
-        currentHealth -= damage;
-    }
-
-    public void StressRise(float stress)
-    {
-        currentStress += stress;
-    }
-
-    public void PanicRise(float panic)
-    {
-        currentPanic += panic;
-    }
 
 }

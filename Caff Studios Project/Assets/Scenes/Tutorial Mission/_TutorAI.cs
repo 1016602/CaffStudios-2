@@ -10,7 +10,7 @@ public class _TutorAI : MonoBehaviour
     public UnityEngine.AI.NavMeshAgent agent;
 
     public float sightRange;
-    public bool attack, escape, handcuffing, stun, arrested, die, stage2;
+    public bool attack, escape, handcuffing, stun, arrested, die, stage2, RunExit;
 
     public Transform walkPoint;
     public Transform walkPoint2;
@@ -20,6 +20,7 @@ public class _TutorAI : MonoBehaviour
     public GameObject checkList;
     public GameObject playerObject;
 
+    public GameObject weaponCollider;
     public Animator anim;
     private Animator anim1;
 
@@ -36,23 +37,25 @@ public class _TutorAI : MonoBehaviour
     {
         AttackTarget();
 
-        if (checkList.GetComponent<_TutorCheckList>().alerted == true)
+        if (checkList.GetComponent<_TutorCheckList>().alerted == true && stage2 == false)
         {
             running();
         }
         
+        //When AI arrive the back door
         Vector3 distanceToDoor = transform.position - walkPoint.transform.position;
         if (distanceToDoor.magnitude < 0.2f) { AttackIdle(); stage2 = true; }
 
+        //when player close to the AI
         Vector3 distanceToPlayer = transform.position - player.transform.position;
         if (distanceToPlayer.magnitude < 3f) { Attack(); }
 
-        if (stage2)
+        if (stage2 && RunExit == false)
         {
             if (distanceToPlayer.magnitude > 3f) AttackIdle();
         }
         
-        if (playerObject.GetComponent<k_PlayerState>().currentHealth <= 70) { RunToExit(); }
+        if (playerObject.GetComponent<k_PlayerState>().currentHealth <= 70) { RunExit = true; RunToExit(); }
 
         Vector3 distanceToExit = transform.position - walkPoint2.transform.position;
         if (distanceToExit.magnitude < 0.2f) { AttackIdle(); escape = true; }
@@ -65,6 +68,15 @@ public class _TutorAI : MonoBehaviour
         anim.SetBool("Running", false);
     }
 
+    public void AttackCollider()
+    {
+        weaponCollider.GetComponent<BoxCollider>().enabled = true;
+    }
+
+    public void AttackedCollider()
+    {
+        weaponCollider.GetComponent<BoxCollider>().enabled = false;
+    }
 
     public void running()
     {

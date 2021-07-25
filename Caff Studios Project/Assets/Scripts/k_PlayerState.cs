@@ -21,17 +21,10 @@ public class k_PlayerState : MonoBehaviour
 
 
 
-    void Update()
-    {
 
+    public void DecreaseHealth(float dam)
+    {
+        currentHealth = currentHealth - dam;
     }
 
-    void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject.name == "Room1")
-        {
-            Debug.Log("room1");
-            inGameMessage.text = "Room 1";
-        }
-    }
 }
