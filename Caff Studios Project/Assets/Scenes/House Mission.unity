@@ -595,6 +595,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FPS + gun
       objectReference: {fileID: 0}
+    - target: {fileID: 2569624386926160340, guid: 64ccd7a5ad0e82641b1def23f45ecf26, type: 3}
+      propertyPath: m_JumpSpeed
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 64ccd7a5ad0e82641b1def23f45ecf26, type: 3}
 --- !u!1 &19955996 stripped
