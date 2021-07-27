@@ -87,6 +87,9 @@ public class k_EnemyStatsUI : MonoBehaviour
         anim.SetBool("Stun", false);
         anim.SetBool("Handcuffing", false);
         anim.SetBool("Arrest", true);
+
+        gameObject.GetComponent<_TutorAI>().arrested = true;
+        
     }
 
     void Stun()
@@ -101,6 +104,8 @@ public class k_EnemyStatsUI : MonoBehaviour
             stuning = false;
             stunTime = 8f;
         }
+
+        gameObject.GetComponent<_TutorAI>().stun = true;
 
         if (chAction)
         {

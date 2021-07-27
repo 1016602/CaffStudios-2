@@ -21,6 +21,8 @@ public class _TutorMessage2 : MonoBehaviour
         if (checkList.GetComponent<_TutorCheckList>().shootWarning == true)
         {
             player.GetComponent<FirstPersonController>().m_WalkSpeed = 5;
+            player.GetComponent<FirstPersonController>().m_RunSpeed = 8;
+            player.GetComponent<FirstPersonController>().m_JumpSpeed = 5;
             popUpUI.SetActive(false);
             popUpUI2.SetActive(true);
         }
@@ -31,6 +33,8 @@ public class _TutorMessage2 : MonoBehaviour
         {
             t2Message.SetActive(false);
             player.GetComponent<FirstPersonController>().m_WalkSpeed = 0;
+            player.GetComponent<FirstPersonController>().m_RunSpeed = 0;
+            player.GetComponent<FirstPersonController>().m_JumpSpeed = 0;
             popUpUI.SetActive(true);
         }
     }

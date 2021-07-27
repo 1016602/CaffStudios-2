@@ -58,7 +58,10 @@ public class _TutorAI : MonoBehaviour
         if (playerObject.GetComponent<k_PlayerState>().currentHealth <= 70) { RunExit = true; RunToExit(); }
 
         Vector3 distanceToExit = transform.position - walkPoint2.transform.position;
-        if (distanceToExit.magnitude < 0.2f) { AttackIdle(); escape = true; }
+        if (distanceToExit.magnitude < 0.2f) { AttackIdle(); escape = true; checkList.GetComponent<_TutorCheckList>().aiEscape = true; }
+
+        if(arrested == true) { checkList.GetComponent<_TutorCheckList>().arrested = true; }
+        if(stun == true) { checkList.GetComponent<_TutorCheckList>().shootTaser = true; }
 
     }
 
