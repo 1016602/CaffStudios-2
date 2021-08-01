@@ -42,6 +42,13 @@ public class _TaserGun : MonoBehaviour
                 GameObject impactGo = Instantiate(impactEffect, hit.point, Quaternion.LookRotation(hit.normal));
                 Destroy(impactGo, 4f);
             }
+
+            if (hit.collider.gameObject.tag == "Civilian")
+            {
+                hit.collider.gameObject.GetComponent<_NPCTutor1>().stun = true;
+                GameObject impactGo = Instantiate(impactEffect, hit.point, Quaternion.LookRotation(hit.normal));
+                Destroy(impactGo, 4f);
+            }
         }
 
     }
