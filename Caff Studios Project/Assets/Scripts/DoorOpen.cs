@@ -4,14 +4,27 @@ using UnityEngine;
 
 public class DoorOpen : MonoBehaviour
 {
-    bool arriveDoor, doorLock, doorUnlock;
-    Animator anim;
+    public string openAnim1;
+    public string openAnim2;
+
+    public GameObject Door;
+    public Animator anim;
+
+    public bool doorClosed, arriveDoor, doorLock, doorUnlock;
+ 
+
+
+    void Start()
+    {
+        anim = Door.GetComponent<Animator>();
+        doorClosed = true;
+    }
 
     void OnTriggerEnter(Collider other)
     {
         if(other.gameObject.name == "FPS + gun")
         {
-            Debug.Log("enter");
+            Debug.Log("A");
             arriveDoor = true;
         }
     }
@@ -21,25 +34,27 @@ public class DoorOpen : MonoBehaviour
         if (other.gameObject.tag == "Player")
         {
             arriveDoor = false;
-            anim.SetTrigger("closing");
+            StartCoroutine(DoorClosing());
         }
     }
 
-    void Start()
-    {
-        anim = GetComponent<Animator>();
-    }
-
-    // Update is called once per frame
     void Update()
     {
-        if (arriveDoor)
+        if (arriveDoor && doorClosed)
         {
             if (Input.GetKeyDown(KeyCode.E))
             {
-                anim.SetTrigger("open door");
+                anim.SetTrigger(openAnim1);
+                doorClosed = false;
             }
         }
-
     }
+
+    IEnumerator DoorClosing()
+    {
+        yield return new WaitForSeconds(2);
+        anim.SetTrigger(openAnim2);
+        doorClosed = true;
+    }
+
 }

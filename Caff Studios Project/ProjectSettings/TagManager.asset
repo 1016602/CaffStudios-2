@@ -8,6 +8,9 @@ TagManager:
   - Enemy
   - PlayerPoint
   - Target
+  - Stop
+  - Marcador
+  - Blocks
   layers:
   - Default
   - TransparentFX
@@ -17,7 +20,7 @@ TagManager:
   - UI
   - World UI
   - Ground
-  - 
+  - Player
   - 
   - 
   - 
