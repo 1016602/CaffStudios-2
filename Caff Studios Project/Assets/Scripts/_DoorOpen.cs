@@ -22,6 +22,8 @@ public class _DoorOpen : MonoBehaviour
 
     void Update()
     {
+        if (!doorLocked) { lockIcon.SetActive(false); }
+
         if (doorLocked && playerCheck1) { lockIcon.SetActive(true); }
         if (doorLocked && playerCheck2) { lockIcon.SetActive(true); }
 

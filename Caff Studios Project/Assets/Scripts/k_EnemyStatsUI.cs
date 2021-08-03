@@ -60,6 +60,7 @@ public class k_EnemyStatsUI : MonoBehaviour
             {
                 Handcuff_Success();
             }
+
         }
 
         if (stuning)
