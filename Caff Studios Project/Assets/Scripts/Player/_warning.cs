@@ -7,11 +7,12 @@ public class _warning : MonoBehaviour
 
     public Camera fpsCam;
     public AudioSource shootWarning;
+    public bool shouted;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        shouted = false;
     }
 
     // Update is called once per frame
@@ -31,6 +32,7 @@ public class _warning : MonoBehaviour
             if (hit.collider.gameObject.tag == "Enemy")
             {
                 shootWarning.Play();
+                shouted = true;
             }
         }
     }
