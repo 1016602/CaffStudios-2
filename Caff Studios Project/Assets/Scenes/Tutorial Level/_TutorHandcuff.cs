@@ -2,9 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class k_Handcuffs : MonoBehaviour
+public class _TutorHandcuff : MonoBehaviour
 {
-   
     public bool readyToUse;
     public float rate = 15f;
     private float nextTimeToUse = 0f;
@@ -25,7 +24,7 @@ public class k_Handcuffs : MonoBehaviour
         {
             readyToUse = true;
 
-        }     
+        }
     }
 
     void OnTriggerExit(Collider other)
@@ -40,7 +39,7 @@ public class k_Handcuffs : MonoBehaviour
 
     void Update()
     {
-        if (readyToUse ==true && Input.GetButtonDown("Fire1") && Time.time >= nextTimeToUse)
+        if (readyToUse == true && Input.GetButtonDown("Fire1") && Time.time >= nextTimeToUse)
         {
             anim.SetTrigger("Use");
             nextTimeToUse = Time.time + rate;
@@ -55,7 +54,8 @@ public class k_Handcuffs : MonoBehaviour
         {
             if (hit.collider.gameObject.tag == "Enemy")
             {
-                hit.collider.gameObject.GetComponent<k_EnemyStatsUI>().chAction = true;
+                hit.collider.gameObject.GetComponent<_TrainingModel1>().chAction = true;
+                
             }
         }
     }
