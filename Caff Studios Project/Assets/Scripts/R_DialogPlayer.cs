@@ -6,10 +6,9 @@ public class R_DialogPlayer : MonoBehaviour
 {
     public GameObject model;
     public GameObject playerHands;
-    public GameObject playerGun;
     public GameObject cuffAudio;
     public GameObject shoutAudio;
-    public GameObject gunShoutAudio;
+ 
 
     
 
@@ -29,11 +28,7 @@ public class R_DialogPlayer : MonoBehaviour
             playerHands.GetComponent<_Alert>().shouted = false;
         }
 
-        if (playerGun.GetComponent<_ShootWarning>().shouted == true)
-        {
-            gunShoutAudio.SetActive(true);
-            playerGun.GetComponent<_ShootWarning>().shouted = false;
-        }
+        
     }
 
 
