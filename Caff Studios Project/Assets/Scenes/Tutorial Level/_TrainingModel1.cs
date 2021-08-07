@@ -26,6 +26,8 @@ public class _TrainingModel1 : MonoBehaviour
 
     void Start()
     {
+        chAction = false;
+        stuning = false;
         arrested = false;
         currentHcLevel = 0f;
         chTime = HandcuffTime;
@@ -38,7 +40,7 @@ public class _TrainingModel1 : MonoBehaviour
     void Update()
     {
 
-        if (chAction)
+        if (chAction && !arrested)
         {
             anim.SetBool("Handcuffing", true);
             handcuffBar.fillAmount = currentHcLevel / maxHcLevel;
@@ -67,7 +69,7 @@ public class _TrainingModel1 : MonoBehaviour
 
         }
 
-        if (stuning)
+        if (stuning && !arrested)
         {
             Stun();
         }
@@ -79,7 +81,7 @@ public class _TrainingModel1 : MonoBehaviour
 
         if (arrested)
         {
-            _Arrest();
+            StartCoroutine(_Arrest());
         }
 
     }
@@ -117,11 +119,16 @@ public class _TrainingModel1 : MonoBehaviour
         }
     }
 
-    void _Arrest()
+    IEnumerator _Arrest()
     {
         anim.SetBool("Stun", false);
         anim.SetBool("Handcuffing", false);
         anim.SetBool("Arrested", true);
+
+        yield return new WaitForSeconds(5);
+        anim.SetBool("Arrested", false);
+        Start();
+
     }
 
 }
