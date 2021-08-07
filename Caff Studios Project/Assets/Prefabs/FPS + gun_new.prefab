@@ -318,7 +318,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17279c8b93220da409579275c6ecd5e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inGameMessage: {fileID: 0}
   playerHealth: 10
   currentHealth: 0
   warning: 0
@@ -773,6 +772,24 @@ MonoBehaviour:
   fpsCam: {fileID: 1306170526243516973}
   shootWarningVoice: {fileID: 3569473170994878677}
   checkList: {fileID: 0}
+--- !u!114 &785496818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2262685570216574889}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ca85aeab3c91564484d2c4a88191efd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fpsCam: {fileID: 1306170526243516973}
+  range: 10
+  taserShot: {fileID: 3569473170273576480}
+  fireRate: 15
+  electFlash: {fileID: 19800004, guid: 30b4cc2728d8cec499fad63ba93785a4, type: 3}
+  impactEffect: {fileID: 100006, guid: 30b4cc2728d8cec499fad63ba93785a4, type: 3}
 --- !u!1 &3569473169895618562
 GameObject:
   m_ObjectHideFlags: 0
@@ -1134,6 +1151,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fpsCam: {fileID: 1306170526243516973}
   shootWarning: {fileID: 3569473170994878677}
+  shouted: 0
 --- !u!82 &3569473170994878677
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1244,6 +1262,7 @@ GameObject:
   - component: {fileID: 560630714363182018}
   - component: {fileID: 4560698461644304726}
   - component: {fileID: 4560698461644304727}
+  - component: {fileID: 1296470891}
   m_Layer: 0
   m_Name: Handcuffs_3D model (1)
   m_TagString: Untagged
@@ -1328,7 +1347,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   readyToUse: 0
-  rate: 5
+  rate: 1
   fpsCam: {fileID: 1306170526243516973}
   range: 2
 --- !u!135 &4560698461644304726
@@ -1363,6 +1382,22 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1296470891
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4560698461644304720}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: faeafc2faacd02447b4d142a46511b8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  readyToUse: 0
+  rate: 1
+  fpsCam: {fileID: 1306170526243516973}
+  range: 2
 --- !u!1 &8070025470011432251
 GameObject:
   m_ObjectHideFlags: 0
@@ -1412,6 +1447,7 @@ MonoBehaviour:
   fpsCam: {fileID: 1306170526243516973}
   alertVoice: {fileID: 3569473170231877444}
   checkList: {fileID: 0}
+  shouted: 0
 --- !u!1001 &1306170524992863723
 PrefabInstance:
   m_ObjectHideFlags: 0

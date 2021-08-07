@@ -9,11 +9,11 @@ public class k_PlayerStatsUI : MonoBehaviour
     public TMP_Text inGameMessage;
     public GameObject playerC;
 
-
     public Image HealthBar;
     public float currentHealth;
     public float maxHealth;
 
+    /*
     public Image StressBar;
     public float currentStress;
     public float maxStress;
@@ -21,20 +21,19 @@ public class k_PlayerStatsUI : MonoBehaviour
     public Image PanicBar;
     public float currentPanic;
     public float maxPanic;
-
+    */
     
     
     void Start()
     {
         currentHealth = maxHealth;
-        currentStress = 0.01f;
-        currentPanic = 0f;
+        //currentStress = 0.01f;
+        //currentPanic = 0f;
     }
 
-    // Update is called once per frame
+
     void Update()
     {
-
         currentHealth = playerC.GetComponent<k_PlayerState>().currentHealth;
 
         HealthBar.fillAmount = currentHealth / maxHealth;
@@ -44,10 +43,10 @@ public class k_PlayerStatsUI : MonoBehaviour
         }
         if (currentHealth <= 0)
         {
-            //playerDie();
             currentHealth = 0;
         }
 
+        /*
         StressBar.fillAmount = currentStress / maxStress;
         //GameObject.FindGameObjectWithTag("MainCamera").GetComponent<k_breathingCam>().BreathCam(currentStress);
         if (currentStress >= maxStress)
@@ -60,7 +59,6 @@ public class k_PlayerStatsUI : MonoBehaviour
         {
             currentPanic = maxPanic;
         }
+        */
     }
-
-
 }

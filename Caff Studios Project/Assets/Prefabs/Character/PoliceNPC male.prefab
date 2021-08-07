@@ -1525,6 +1525,7 @@ MonoBehaviour:
   idle2: 0
   idle3: 0
   walking: 0
+  shooting: 0
 --- !u!136 &7790312109446268014
 CapsuleCollider:
   m_ObjectHideFlags: 0
