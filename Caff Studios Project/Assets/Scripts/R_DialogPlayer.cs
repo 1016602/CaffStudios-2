@@ -5,9 +5,13 @@ using UnityEngine;
 public class R_DialogPlayer : MonoBehaviour
 {
     public GameObject model;
-    public GameObject player;
+    public GameObject playerHands;
+    public GameObject playerGun;
     public GameObject cuffAudio;
     public GameObject shoutAudio;
+    public GameObject gunShoutAudio;
+
+    
 
     // Start is called before the first frame update
     void Update()
@@ -15,12 +19,20 @@ public class R_DialogPlayer : MonoBehaviour
         if (model.GetComponent<k_EnemyStatsUI>().arrested == true)
         {
             cuffAudio.SetActive(true);
+            model.GetComponent<k_EnemyStatsUI>().arrested = false;
+           
         }
 
-        if (player.GetComponent<_Alert>().shouted == true)
+        if (playerHands.GetComponent<_Alert>().shouted == true)
         {
             shoutAudio.SetActive(true);
-            
+            playerHands.GetComponent<_Alert>().shouted = false;
+        }
+
+        if (playerGun.GetComponent<_ShootWarning>().shouted == true)
+        {
+            gunShoutAudio.SetActive(true);
+            playerGun.GetComponent<_ShootWarning>().shouted = false;
         }
     }
 

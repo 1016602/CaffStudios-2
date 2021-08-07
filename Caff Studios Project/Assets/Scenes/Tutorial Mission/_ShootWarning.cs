@@ -9,6 +9,8 @@ public class _ShootWarning : MonoBehaviour
     public AudioSource shootWarningVoice;
     public GameObject checkList;
 
+    public bool shouted = false;
+
     void Update()
     {
         if (Input.GetKeyDown("f"))
@@ -24,6 +26,7 @@ public class _ShootWarning : MonoBehaviour
         {
             if (hit.collider.gameObject.tag == "Enemy")
             {
+                shouted = true;
                 shootWarningVoice.Play();
                 checkList.GetComponent<_TutorCheckList>().shootWarning = true;
             }
