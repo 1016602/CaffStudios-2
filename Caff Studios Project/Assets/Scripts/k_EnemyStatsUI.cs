@@ -15,6 +15,7 @@ public class k_EnemyStatsUI : MonoBehaviour
     float stunTime = 8f;
 
     public bool stuning, chAction, arrested;
+    public bool stunn = false;
 
     float chTime = 0f;
     float startingTime = 2f;
@@ -95,6 +96,7 @@ public class k_EnemyStatsUI : MonoBehaviour
 
     void Stun()
     {
+        stunn = true;
         anim.SetBool("Stun", true);
         stunTime -= 1 * Time.deltaTime;
         stunTimer.text = stunTime.ToString("0");
