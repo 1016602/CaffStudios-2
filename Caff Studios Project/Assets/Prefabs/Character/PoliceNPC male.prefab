@@ -1454,6 +1454,7 @@ GameObject:
   - component: {fileID: 6393174971489336064}
   - component: {fileID: 1033912664360214906}
   - component: {fileID: 6049124225652515257}
+  - component: {fileID: 7790312109446268014}
   m_Layer: 0
   m_Name: PoliceNPC male
   m_TagString: Untagged
@@ -1523,6 +1524,21 @@ MonoBehaviour:
   idle: 0
   idle2: 0
   idle3: 0
+  walking: 0
+--- !u!136 &7790312109446268014
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6049124225652515258}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.28
+  m_Height: 1.66
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.89, z: 0}
 --- !u!1 &6332708156950198403
 GameObject:
   m_ObjectHideFlags: 0

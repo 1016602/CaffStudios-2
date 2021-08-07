@@ -406,6 +406,7 @@ GameObject:
   - component: {fileID: 1406013854349347186}
   - component: {fileID: 1045304366656248289}
   - component: {fileID: 7954524904016280150}
+  - component: {fileID: 2595457160477891611}
   m_Layer: 0
   m_Name: PoliceNPC female
   m_TagString: Untagged
@@ -475,6 +476,21 @@ MonoBehaviour:
   idle: 0
   idle2: 0
   idle3: 0
+  walking: 0
+--- !u!136 &2595457160477891611
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1785952723593925576}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.37
+  m_Height: 1.57
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.84, z: 0}
 --- !u!1 &1902768241508354028
 GameObject:
   m_ObjectHideFlags: 0

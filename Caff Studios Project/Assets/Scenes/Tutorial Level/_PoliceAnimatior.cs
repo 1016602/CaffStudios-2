@@ -5,7 +5,7 @@ using UnityEngine;
 public class _PoliceAnimatior : MonoBehaviour
 {
 
-    public bool sitting1, sitting2, sitWorking, talking, talking2, idle, idle2, idle3;
+    public bool sitting1, sitting2, sitWorking, talking, talking2, idle, idle2, idle3, walking, shooting;
 
     Animator anim;
 
@@ -32,5 +32,9 @@ public class _PoliceAnimatior : MonoBehaviour
         if (idle2) { anim.SetBool("Idle2", true); }
 
         if (idle3) { anim.SetBool("Idle3", true); }
+
+        if (walking) { anim.SetBool("Walking", true); }
+
+        if (shooting) { anim.SetBool("Shooting", true); }
     }
 }
