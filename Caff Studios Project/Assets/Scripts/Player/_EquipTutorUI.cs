@@ -30,21 +30,18 @@ public class _EquipTutorUI : MonoBehaviour
 
         if (!training2) 
         {
+            activateSlot3.SetActive(false);
             equiptmentSlot3.SetActive(false);
             taser.SetActive(false);
 
-            equiptmentSlot1.SetActive(true);
-            hand.SetActive(true);
-            taser.SetActive(false);
         }
+        
         if (!training3) 
-        { 
+        {
             activateSlot4.SetActive(false);
-            activateSlot3.SetActive(false);
-            equiptmentSlot1.SetActive(true);
-            hand.SetActive(true);
             equiptmentSlot4.SetActive(false);
             gun.SetActive(false);
+
         }
 
         if (Input.GetKeyDown(KeyCode.Alpha1))
