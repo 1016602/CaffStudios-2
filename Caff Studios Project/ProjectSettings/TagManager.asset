@@ -12,7 +12,6 @@ TagManager:
   - Marcador
   - Blocks
   - Civilian
-  - Training
   layers:
   - Default
   - TransparentFX

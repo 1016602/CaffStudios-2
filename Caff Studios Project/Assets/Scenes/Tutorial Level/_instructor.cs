@@ -48,6 +48,7 @@ public class _instructor : MonoBehaviour
 
     void TalkToPlayer()
     {
+
         Audio.SetActive(true);
         inGameMessage.text = message;
         playerPoint.position = new Vector3(playerPoint.position.x, transform.position.y, playerPoint.position.z);

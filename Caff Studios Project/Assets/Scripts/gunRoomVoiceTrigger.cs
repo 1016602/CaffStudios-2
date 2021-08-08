@@ -7,7 +7,6 @@ public class gunRoomVoiceTrigger : MonoBehaviour
     public GameObject playerGun;
 
     public GameObject gunShoutAudio;
-    public GameObject gunFinishedAudio;
 
     // Update is called once per frame
     void Update()
@@ -16,12 +15,6 @@ public class gunRoomVoiceTrigger : MonoBehaviour
         {
             gunShoutAudio.SetActive(true);
             playerGun.GetComponent<_ShootWarning>().shouted = false;
-        }
-
-        if (playerGun.GetComponent<Gun>().training == true)
-        {
-            gunFinishedAudio.SetActive(true);
-            playerGun.GetComponent<Gun>().training = false;
         }
     }
 }
