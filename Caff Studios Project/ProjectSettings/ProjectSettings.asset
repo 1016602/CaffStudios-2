@@ -44,7 +44,7 @@ PlayerSettings:
     duration: 2
   - logo: {fileID: 21300000, guid: 49c396e054a067e47abd02e6f7cecb4f, type: 3}
     duration: 2
-  - logo: {fileID: 21300000, guid: 6f5109f46659afb45a6f697fcf07b8bc, type: 3}
+  - logo: {fileID: 21300000, guid: 8f52d40ea2c0b1f41a47776f03770992, type: 3}
     duration: 3.03
   m_VirtualRealitySplashScreen: {fileID: 0}
   m_HolographicTrackingLossScreen: {fileID: 0}
@@ -151,7 +151,8 @@ PlayerSettings:
   resolutionScalingMode: 0
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
-  applicationIdentifier: {}
+  applicationIdentifier:
+    Standalone: com.CaffienatedStudios.CaffStudiosProject
   buildNumber:
     Standalone: 0
     iPhone: 0
