@@ -19,6 +19,7 @@ public class Gun : MonoBehaviour
 
 
     private float nextTimeToFire = 0f;
+    public bool training = false;
 
     void Start()
     {
@@ -66,6 +67,12 @@ public class Gun : MonoBehaviour
 
            GameObject impactGo = Instantiate(impactEffect, hit.point, Quaternion.LookRotation(hit.normal));
            Destroy(impactGo, 2f);
+
+
+            if (hit.collider.gameObject.tag == "Training")
+            {
+                training = true;
+            }
         }
     }
 }
