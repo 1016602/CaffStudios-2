@@ -15,10 +15,10 @@ public class R_DialogPlayer : MonoBehaviour
     // Start is called before the first frame update
     void Update()
     {
-        if (model.GetComponent<k_EnemyStatsUI>().arrested == true)
+        if (model.GetComponent<_TrainingModel1>().arrested == true)
         {
             cuffAudio.SetActive(true);
-            model.GetComponent<k_EnemyStatsUI>().arrested = false;
+            model.GetComponent<_TrainingModel1>().arrested = false;
            
         }
 
