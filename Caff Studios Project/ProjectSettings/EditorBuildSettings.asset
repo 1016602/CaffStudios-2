@@ -5,18 +5,21 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Main Menu.unity
     guid: 376130c7ab7e20349b71249c0fd8b07b
+  - enabled: 1
+    path: Assets/Scenes/Tutorial Level_210808.unity
+    guid: d71047ea4fdc30e4e8d111f51a6bcff3
+  - enabled: 1
+    path: Assets/Scenes/Mission Brief_Tutorial.unity
+    guid: 009f3daaf2f926f44a0fea927392bb67
+  - enabled: 1
+    path: Assets/Scenes/Tutorial Mission.unity
+    guid: 2de0f0677410eab47943716578171795
   - enabled: 0
     path: Assets/Scenes/z-old/Tutorial Level_210723.unity
     guid: a2844c5889abe7b409dafc6bab13bd37
-  - enabled: 0
-    path: Assets/Scenes/Mission Brief_Tutorial.unity
-    guid: 009f3daaf2f926f44a0fea927392bb67
-  - enabled: 0
-    path: Assets/Scenes/Tutorial Mission.unity
-    guid: 2de0f0677410eab47943716578171795
   - enabled: 0
     path: Assets/Scenes/Game Over.unity
     guid: fc71751e777076e48905e5afbadcd725
@@ -29,7 +32,4 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/z-old/level_test.unity
     guid: f34323d50d2625a4baeeb61797b68f41
-  - enabled: 1
-    path: Assets/Scenes/Tutorial Level_210808.unity
-    guid: d71047ea4fdc30e4e8d111f51a6bcff3
   m_configObjects: {}
