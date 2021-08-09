@@ -70,9 +70,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_IsWalking: 0
   m_WalkSpeed: 5
-  m_RunSpeed: 10
+  m_RunSpeed: 6
   m_RunstepLenghten: 0.7
-  m_JumpSpeed: 10
+  m_JumpSpeed: 5
   m_StickToGroundForce: 10
   m_GravityMultiplier: 2
   m_MouseLook:
@@ -318,7 +318,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17279c8b93220da409579275c6ecd5e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerHealth: 10
+  playerHealth: 100
   currentHealth: 0
   warning: 0
   taserWarning: 0
@@ -614,6 +614,7 @@ MonoBehaviour:
   muzzleFlash: {fileID: 19800006, guid: c888f0c922d622147bbdbe2ca794142b, type: 3}
   impactEffect: {fileID: 100002, guid: 00fedc70b62a31e448e8ccc298257b56, type: 3}
   checkList: {fileID: 0}
+  training: 0
 --- !u!114 &3569473170035255451
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -643,6 +644,7 @@ MonoBehaviour:
   fpsCam: {fileID: 1306170526243516973}
   shootWarningVoice: {fileID: 3569473170602463298}
   checkList: {fileID: 0}
+  shouted: 0
 --- !u!82 &3569473170273576480
 AudioSource:
   m_ObjectHideFlags: 0
@@ -739,6 +741,24 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &785496818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2262685570216574889}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ca85aeab3c91564484d2c4a88191efd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fpsCam: {fileID: 1306170526243516973}
+  range: 10
+  taserShot: {fileID: 3569473170273576480}
+  fireRate: 15
+  electFlash: {fileID: 19800004, guid: 30b4cc2728d8cec499fad63ba93785a4, type: 3}
+  impactEffect: {fileID: 100006, guid: 30b4cc2728d8cec499fad63ba93785a4, type: 3}
 --- !u!114 &3569473170273576481
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -772,24 +792,7 @@ MonoBehaviour:
   fpsCam: {fileID: 1306170526243516973}
   shootWarningVoice: {fileID: 3569473170994878677}
   checkList: {fileID: 0}
---- !u!114 &785496818
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2262685570216574889}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ca85aeab3c91564484d2c4a88191efd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fpsCam: {fileID: 1306170526243516973}
-  range: 10
-  taserShot: {fileID: 3569473170273576480}
-  fireRate: 15
-  electFlash: {fileID: 19800004, guid: 30b4cc2728d8cec499fad63ba93785a4, type: 3}
-  impactEffect: {fileID: 100006, guid: 30b4cc2728d8cec499fad63ba93785a4, type: 3}
+  shouted: 0
 --- !u!1 &3569473169895618562
 GameObject:
   m_ObjectHideFlags: 0

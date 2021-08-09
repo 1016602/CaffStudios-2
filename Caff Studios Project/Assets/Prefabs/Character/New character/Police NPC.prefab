@@ -289,6 +289,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1809093516655830533}
+  - component: {fileID: 2543592233065012243}
+  - component: {fileID: 1270430525609055221}
   m_Layer: 0
   m_Name: Police NPC
   m_TagString: Untagged
@@ -317,6 +319,47 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+--- !u!95 &2543592233065012243
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1319801374196366527}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: aec7feec38ec8624e9d527d4c7c86d56, type: 3}
+  m_Controller: {fileID: 9100000, guid: 3a2e7aba42b4efb4e97dea70709b939b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1270430525609055221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1319801374196366527}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efe0f44b1d41da24582374e4d27b0f7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sitting1: 0
+  sitting2: 0
+  sitWorking: 0
+  talking: 0
+  talking2: 0
+  idle: 0
+  idle2: 0
+  idle3: 0
+  walking: 0
+  shooting: 0
 --- !u!1 &1603389976237417862
 GameObject:
   m_ObjectHideFlags: 0
