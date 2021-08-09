@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TutorLevel;
+
 
 public class taserRoomVoice : MonoBehaviour
 {
@@ -16,14 +18,14 @@ public class taserRoomVoice : MonoBehaviour
         if (model.GetComponent<_TrainingModel1>().arrested == true)
         {
             cuffAudio.SetActive(true);
-            model.GetComponent<_TrainingModel1>().arrested = false;
+            //model.GetComponent<_TrainingModel1>().arrested = false;
 
         }
 
         if (model.GetComponent<_TrainingModel1>().stuning == true)
         {
             stunAudio.SetActive(true);
-            model.GetComponent<_TrainingModel1>().stuning = false;
+            //model.GetComponent<_TrainingModel1>().stuning = false;
 
         }
 

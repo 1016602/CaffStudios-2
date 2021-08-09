@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TutorLevel;
 
 public class R_DialogPlayer : MonoBehaviour
 {
@@ -18,7 +19,7 @@ public class R_DialogPlayer : MonoBehaviour
         if (model.GetComponent<_TrainingModel1>().arrested == true)
         {
             cuffAudio.SetActive(true);
-            model.GetComponent<_TrainingModel1>().arrested = false;
+            //model.GetComponent<_TrainingModel1>().arrested = false;
            
         }
 
