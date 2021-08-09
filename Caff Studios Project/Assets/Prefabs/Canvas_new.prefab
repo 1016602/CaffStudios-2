@@ -3658,12 +3658,6 @@ MonoBehaviour:
   HealthBar: {fileID: 5245774472761031721}
   currentHealth: 0
   maxHealth: 100
-  StressBar: {fileID: 5245774472332840410}
-  currentStress: 0.1
-  maxStress: 10
-  PanicBar: {fileID: 0}
-  currentPanic: 0
-  maxPanic: 10
 --- !u!114 &1165661467
 MonoBehaviour:
   m_ObjectHideFlags: 0
