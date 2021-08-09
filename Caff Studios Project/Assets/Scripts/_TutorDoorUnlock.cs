@@ -14,7 +14,7 @@ public class _TutorDoorUnlock : MonoBehaviour
     {
         if (T1)
         {
-            if (model.GetComponent<k_EnemyStatsUI>().arrested == true)
+            if (model.GetComponent<_TrainingModel1>().arrested == true)
             {
                 door.GetComponent<_DoorOpen>().doorLocked = false;
             }
@@ -23,9 +23,9 @@ public class _TutorDoorUnlock : MonoBehaviour
         if (T2)
         {
             
-            if (model.GetComponent<k_EnemyStatsUI>().stuning == true) { st = true; }
+            if (model.GetComponent<_TrainingModel1>().stuning == true) { st = true; }
                 
-            if (st == true && model.GetComponent<k_EnemyStatsUI>().arrested == true)
+            if (st == true && model.GetComponent<_TrainingModel1>().arrested == true)
             {
                 door.GetComponent<_DoorOpen>().doorLocked = false;
             }

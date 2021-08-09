@@ -13,17 +13,17 @@ public class taserRoomVoice : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (model.GetComponent<k_EnemyStatsUI>().arrested == true)
+        if (model.GetComponent<_TrainingModel1>().arrested == true)
         {
             cuffAudio.SetActive(true);
-            model.GetComponent<k_EnemyStatsUI>().arrested = false;
+            model.GetComponent<_TrainingModel1>().arrested = false;
 
         }
 
-        if (model.GetComponent<k_EnemyStatsUI>().stunn == true)
+        if (model.GetComponent<_TrainingModel1>().stuning == true)
         {
             stunAudio.SetActive(true);
-            model.GetComponent<k_EnemyStatsUI>().stunn = false;
+            model.GetComponent<_TrainingModel1>().stuning = false;
 
         }
 
