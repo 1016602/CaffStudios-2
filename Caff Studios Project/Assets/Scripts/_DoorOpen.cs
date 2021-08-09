@@ -20,7 +20,7 @@ public class _DoorOpen : MonoBehaviour
     }
 
 
-    void Update()
+    void FixedUpdate()
     {
         if (!doorLocked) { lockIcon.SetActive(false); }
 
@@ -32,7 +32,7 @@ public class _DoorOpen : MonoBehaviour
 
         if (playerCheck1 && !doorLocked)
         {
-            if (Input.GetKeyDown(KeyCode.E))
+            if (Input.GetKey(KeyCode.E))
             {
                 anim.SetBool("OpenB", true);
                 anim.SetBool("CloseB", false);
@@ -49,7 +49,7 @@ public class _DoorOpen : MonoBehaviour
 
         if (playerCheck2 && !doorLocked)
         {
-            if (Input.GetKeyDown(KeyCode.E))
+            if (Input.GetKey(KeyCode.E))
             {
                 anim.SetBool("OpenB", false);
                 anim.SetBool("CloseB", false);
