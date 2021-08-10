@@ -12,7 +12,7 @@ public class _instructor : MonoBehaviour
     public Transform lookPosition;
     public LayerMask whatIsPlayer;
     bool playerCheck;
-
+    public GameObject Block;
     public TMP_Text inGameMessage;
 
     [TextArea]
@@ -26,6 +26,7 @@ public class _instructor : MonoBehaviour
     {
         playerPoint = GameObject.FindWithTag("PlayerPoint").transform;
         anim = GetComponent<Animator>();
+        Block = GameObject.Find("BlockerWall");
     }
 
 
@@ -52,7 +53,7 @@ public class _instructor : MonoBehaviour
         inGameMessage.text = message;
         playerPoint.position = new Vector3(playerPoint.position.x, transform.position.y, playerPoint.position.z);
         transform.LookAt(playerPoint);
-
+        Block.SetActive(false);
         anim.SetBool("Talking", true);
 
     }

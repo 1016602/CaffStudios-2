@@ -7,10 +7,11 @@ public class _DoorOpen : MonoBehaviour
     public Transform doorFront;
     public Transform doorBack;
     public LayerMask whatIsPlayer;
-    public bool playerCheck1, playerCheck2, doorLocked;
+    public bool playerCheck1, playerCheck2, doorLocked, voiceDoor;
 
     public GameObject lockIcon;
 
+    public AudioSource audioSource;
 
     Animator anim;
 
@@ -26,6 +27,21 @@ public class _DoorOpen : MonoBehaviour
 
         if (doorLocked && playerCheck1) { lockIcon.SetActive(true); }
         if (doorLocked && playerCheck2) { lockIcon.SetActive(true); }
+
+        if (voiceDoor = true)
+        {
+            
+                if (audioSource.isPlaying)
+                {
+                    doorLocked = true;
+                }
+                else
+                {
+                    doorLocked = false;
+                }
+            
+        }
+
 
         playerCheck1 = Physics.CheckSphere(doorFront.position, 1, whatIsPlayer);
         playerCheck2 = Physics.CheckSphere(doorBack.position, 1, whatIsPlayer);
