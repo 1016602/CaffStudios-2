@@ -25167,9 +25167,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a35f3b8b517dd2e44b2161991426be35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  Enemy: {fileID: 0}
-  NPC: {fileID: 0}
+  player: {fileID: 233644548}
+  Enemy: {fileID: 1321860362}
+  NPC: {fileID: 139946156}
   checkList: {fileID: 1087693631}
   popUpUI: {fileID: 1208658987}
 --- !u!1 &700064328
@@ -44433,6 +44433,11 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!1 &1321860362 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1818226812559104371, guid: 5d4280c75ca72dd49b40d1141f9736e9, type: 3}
+  m_PrefabInstance: {fileID: 1334394822028125223}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1328707107
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -69130,6 +69135,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1880769242}
     m_Modifications:
     - target: {fileID: 1078708367, guid: 7aabad8763f1f054e8ae3157b578790b, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1078708367, guid: 7aabad8763f1f054e8ae3157b578790b, type: 3}
       propertyPath: doorLocked
       value: 1
       objectReference: {fileID: 0}
@@ -70724,15 +70733,15 @@ PrefabInstance:
     - target: {fileID: 5358789566520687011, guid: 5d4280c75ca72dd49b40d1141f9736e9, type: 3}
       propertyPath: anim
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 5640671198727070651}
     - target: {fileID: 5358789566520687011, guid: 5d4280c75ca72dd49b40d1141f9736e9, type: 3}
       propertyPath: agent
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 5640671198727070650}
     - target: {fileID: 5358789566520687011, guid: 5d4280c75ca72dd49b40d1141f9736e9, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1306170526243023917, guid: 3089dea266790564fba60b4825b8112c, type: 3}
     - target: {fileID: 5358789566520687011, guid: 5d4280c75ca72dd49b40d1141f9736e9, type: 3}
       propertyPath: checkList
       value: 
@@ -70748,11 +70757,11 @@ PrefabInstance:
     - target: {fileID: 5358789566520687011, guid: 5d4280c75ca72dd49b40d1141f9736e9, type: 3}
       propertyPath: playerObject
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 233644548}
     - target: {fileID: 5358789566520687011, guid: 5d4280c75ca72dd49b40d1141f9736e9, type: 3}
       propertyPath: weaponCollider
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1334394822028125224}
     - target: {fileID: 7031578715034499448, guid: 5d4280c75ca72dd49b40d1141f9736e9, type: 3}
       propertyPath: stunTimer
       value: 
@@ -70767,6 +70776,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d4280c75ca72dd49b40d1141f9736e9, type: 3}
+--- !u!1 &1334394822028125224 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 370199093974707684, guid: 5d4280c75ca72dd49b40d1141f9736e9, type: 3}
+  m_PrefabInstance: {fileID: 1334394822028125223}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &1606984873246209884
 RectTransform:
   m_ObjectHideFlags: 0
@@ -72851,6 +72865,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 39e22ff291e90cb46a2a60a501561f02, type: 3}
+--- !u!195 &5640671198727070650 stripped
+NavMeshAgent:
+  m_CorrespondingSourceObject: {fileID: 395509662, guid: 39e22ff291e90cb46a2a60a501561f02, type: 3}
+  m_PrefabInstance: {fileID: 5640671198727070649}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &5640671198727070651 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5640671198230933130, guid: 39e22ff291e90cb46a2a60a501561f02, type: 3}
+  m_PrefabInstance: {fileID: 5640671198727070649}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7260297374049689074 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6809284770946673400, guid: 2925a83c84a52674f95dce28a5574937, type: 3}
