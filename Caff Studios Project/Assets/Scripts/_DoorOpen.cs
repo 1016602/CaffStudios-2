@@ -28,7 +28,7 @@ public class _DoorOpen : MonoBehaviour
         if (doorLocked && playerCheck1) { lockIcon.SetActive(true); }
         if (doorLocked && playerCheck2) { lockIcon.SetActive(true); }
 
-        if (voiceDoor = true)
+        if (voiceDoor == true)
         {
             
                 if (audioSource.isPlaying)
