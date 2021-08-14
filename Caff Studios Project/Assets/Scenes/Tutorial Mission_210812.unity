@@ -33174,10 +33174,6 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1296470891, guid: 3089dea266790564fba60b4825b8112c, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 1306170526236345837, guid: 3089dea266790564fba60b4825b8112c, type: 3}
       propertyPath: m_RunSpeed
       value: 7
