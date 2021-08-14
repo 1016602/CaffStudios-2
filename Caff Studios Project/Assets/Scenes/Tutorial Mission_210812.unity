@@ -7649,12 +7649,15 @@ MonoBehaviour:
     Allocate
     warning by:
 
-    - Equiping the taser gun by pressing "2".
+    - Equiping the taser gun by pressing "3".
 
-    - Pan cursor
-    over to suspect
+    - Aim at the
+    Suspect.
 
-    - Press "F" to tase.
+    - Warn them again by pressing "F"
+
+    - Press "Left Mouse Button"
+    to fire.
 
 '
   m_isRightToLeft: 0
@@ -7986,6 +7989,58 @@ PrefabInstance:
     - target: {fileID: 5245774472257591435, guid: 558a273901593724bab034a1dfaeb133, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6940220007798375407, guid: 558a273901593724bab034a1dfaeb133, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6940220007798375407, guid: 558a273901593724bab034a1dfaeb133, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6940220007798375407, guid: 558a273901593724bab034a1dfaeb133, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1481283517}
+    - target: {fileID: 6940220007798375407, guid: 558a273901593724bab034a1dfaeb133, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6940220007798375407, guid: 558a273901593724bab034a1dfaeb133, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Mainmenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 6940220007798375407, guid: 558a273901593724bab034a1dfaeb133, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6940220007798375407, guid: 558a273901593724bab034a1dfaeb133, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: MainMenu, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6940220007798375407, guid: 558a273901593724bab034a1dfaeb133, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: _sceneLoad, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6940220007798375407, guid: 558a273901593724bab034a1dfaeb133, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6940220008128852242, guid: 558a273901593724bab034a1dfaeb133, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1481283517}
+    - target: {fileID: 6940220008128852242, guid: 558a273901593724bab034a1dfaeb133, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: QuitGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 6940220008128852242, guid: 558a273901593724bab034a1dfaeb133, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: MainMenu, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6940220009847718267, guid: 558a273901593724bab034a1dfaeb133, type: 3}
+      propertyPath: m_text
+      value: Quit Game
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 558a273901593724bab034a1dfaeb133, type: 3}
@@ -33918,9 +33973,6 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Help out the civilian!
 
-    - Stress and panic level will rise based on
-    civilian''s interaction with suspect.
-
     - Press "E" to help the civilian'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -49124,6 +49176,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5245774471908992832, guid: 558a273901593724bab034a1dfaeb133, type: 3}
   m_PrefabInstance: {fileID: 185818151}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1481283517 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5245774471908992834, guid: 558a273901593724bab034a1dfaeb133, type: 3}
+  m_PrefabInstance: {fileID: 185818151}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1481283514}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acd9b0c97b497a247b6148ac4e3eb16e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1481283523
 MonoBehaviour:
   m_ObjectHideFlags: 0

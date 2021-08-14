@@ -34,7 +34,7 @@ public class _TutorMessage : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            player.GetComponent<FirstPersonController>().m_WalkSpeed =0;
+            player.GetComponent<FirstPersonController>().m_WalkSpeed = 0;
             player.GetComponent<FirstPersonController>().m_RunSpeed = 0;
             player.GetComponent<FirstPersonController>().m_JumpSpeed = 0;
 

@@ -87,8 +87,7 @@ public class _DoorOpen : MonoBehaviour
         yield return new WaitForSeconds(2);
         anim.SetBool("CloseB", true);
         anim.SetBool("OpenB", false);
-        playerCheck1 = false;
-        playerCheck2 = false;
+     
     }
 
     IEnumerator DoorClosing2()
@@ -96,8 +95,7 @@ public class _DoorOpen : MonoBehaviour
         yield return new WaitForSeconds(2);
         anim.SetBool("CloseA", true);
         anim.SetBool("OpenA", false);
-        playerCheck1 = false;
-        playerCheck2 = false;
+       
     }
 
     void OnDrawGizmos()
