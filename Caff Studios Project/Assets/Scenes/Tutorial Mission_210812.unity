@@ -4492,7 +4492,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7228608651475555547, guid: fdeedce96fa9dda42aa19d0883f206e3, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7228608651475555547, guid: fdeedce96fa9dda42aa19d0883f206e3, type: 3}
       propertyPath: m_LocalScale.x
@@ -8957,7 +8957,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
+  m_PresetInfoIsWorld: 1
 --- !u!223 &229400931
 Canvas:
   m_ObjectHideFlags: 0
@@ -14228,6 +14228,7 @@ GameObject:
   - component: {fileID: 338578870}
   - component: {fileID: 338578869}
   - component: {fileID: 338578868}
+  - component: {fileID: 338578872}
   m_Layer: 5
   m_Name: Pop UI 3
   m_TagString: Untagged
@@ -14316,6 +14317,25 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!95 &338578872
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 338578867}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 216625b81f5205147b1825fc979d5528, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!43 &339223134
 Mesh:
   m_ObjectHideFlags: 0
@@ -50993,6 +51013,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   popUpUI: {fileID: 229400928}
+  anim: {fileID: 1665501399}
 --- !u!135 &1549889834
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -52078,7 +52099,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7228608651475555547, guid: fdeedce96fa9dda42aa19d0883f206e3, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7228608651475555547, guid: fdeedce96fa9dda42aa19d0883f206e3, type: 3}
       propertyPath: m_LocalScale.x
@@ -55969,6 +55990,7 @@ GameObject:
   - component: {fileID: 1665501396}
   - component: {fileID: 1665501398}
   - component: {fileID: 1665501397}
+  - component: {fileID: 1665501399}
   m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
@@ -55993,7 +56015,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 596, y: -306}
+  m_AnchoredPosition: {x: 596, y: -280}
   m_SizeDelta: {x: 626.9418, y: 406.5326}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1665501397
@@ -56034,6 +56056,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1665501395}
   m_CullTransparentMesh: 1
+--- !u!95 &1665501399
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1665501395}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 216625b81f5205147b1825fc979d5528, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &1672931229
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -57297,6 +57338,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   popUpUI: {fileID: 338578867}
+  anim: {fileID: 338578872}
 --- !u!135 &1707747421
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -67244,7 +67286,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7228608651475555547, guid: fdeedce96fa9dda42aa19d0883f206e3, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7228608651475555547, guid: fdeedce96fa9dda42aa19d0883f206e3, type: 3}
       propertyPath: m_LocalScale.x

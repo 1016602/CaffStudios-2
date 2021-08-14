@@ -444,7 +444,9 @@ MonoBehaviour:
   playerCheck1: 0
   playerCheck2: 0
   doorLocked: 0
+  voiceDoor: 0
   lockIcon: {fileID: 8317738565595507319}
+  audioSource: {fileID: 0}
 --- !u!1 &4430967972255069490
 GameObject:
   m_ObjectHideFlags: 0
