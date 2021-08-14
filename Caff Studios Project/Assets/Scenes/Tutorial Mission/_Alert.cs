@@ -31,7 +31,8 @@ public class _Alert : MonoBehaviour
                 shouted = true;
                 alertVoice.Play();
                 checkList.GetComponent<_TutorCheckList>().alerted = true;
-                
+                hit.collider.gameObject.GetComponent<_TutorialMissionAI>().warned = true;
+
             }
             
         }

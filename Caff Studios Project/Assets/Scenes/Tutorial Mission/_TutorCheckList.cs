@@ -26,17 +26,21 @@ namespace MissionCheckList
         {
             calculateScore = true;
         }
+
         void Update()
         {
             playerScore.text = score.ToString();
             if (score <= 0) { score = 0; }
 
-            if (gunShoot || aiEscape || arrested)
+            if (Enemy.GetComponent<_TutorialMissionAI>().arrested == true || Enemy.GetComponent<_TutorialMissionAI>().escaped)
             {
                 MissionResult();
             }
 
-           
+
+            if (Enemy.GetComponent<_TutorialMissionAI>().warned == true) { alerted = true; }
+
+
         }
 
         public void MissionResult()
@@ -46,7 +50,7 @@ namespace MissionCheckList
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
             if (calculateScore == true) { ScoreCalculate(); }
-            
+
 
 
 
@@ -54,7 +58,19 @@ namespace MissionCheckList
 
         public void ScoreCalculate()
         {
+
+            //warned, shootWarned, stunned, arrested, escaped, chAction;
+            if (Enemy.GetComponent<_TutorialMissionAI>().warned == true) { alerted = true; }
+            if (Enemy.GetComponent<_TutorialMissionAI>().shootWarned == true) { score += 5; }
+            if (Enemy.GetComponent<_TutorialMissionAI>().arrested == true) { score += 10; }
+
+            if (Enemy.GetComponent<_TutorialMissionAI>().stunned == true) { score -= 5; }
+            if (Enemy.GetComponent<_TutorialMissionAI>().escaped == true) { score -= 10; }
+
             if (alerted == true) { score += 5; }
+
+            /*
+           
             if (shootWarning == true) { score += 5; }
             if (nPC == true) { score += 10; }
             if (arrested == true) { score += 10; }
@@ -62,13 +78,18 @@ namespace MissionCheckList
             if (gunShoot == true) { score -= 20; }
             if (shootTaser == true) { score -= 5; }
             if (aiEscape == true) { score -= 10; }
+            */
 
             calculateScore = false;
 
 
         }
 
+
+
     }
+
+
 }
 
 

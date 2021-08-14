@@ -14,7 +14,7 @@ public class _TutorMessage2 : MonoBehaviour
 
     public GameObject t2Message;
     public GameObject popUpUI;
-    public GameObject popUpUI2;
+    //public GameObject popUpUI2;
 
     void Update()
     {
@@ -24,7 +24,7 @@ public class _TutorMessage2 : MonoBehaviour
             player.GetComponent<FirstPersonController>().m_RunSpeed = 8;
             player.GetComponent<FirstPersonController>().m_JumpSpeed = 5;
             popUpUI.SetActive(false);
-            popUpUI2.SetActive(true);
+            //popUpUI2.SetActive(true);
         }
     }
     void OnTriggerEnter(Collider other)
@@ -43,7 +43,8 @@ public class _TutorMessage2 : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            popUpUI2.SetActive(false);
+            popUpUI.SetActive(false);
+            //popUpUI2.SetActive(false);
         }
     }
 }

@@ -15,7 +15,7 @@ public class _NPCTutor1 : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.name == "FPS + gun")
+        if (other.gameObject.tag == "Player")
         {
             trigger = true;
         }

@@ -20,6 +20,7 @@ public class _TutorialMissionAI : MonoBehaviour
     public float sightRange;
     public Transform player;
     private Transform playerPoint;
+    public GameObject playerObject;
 
     public GameObject weaponCollider;
     public Animator anim;
@@ -42,6 +43,9 @@ public class _TutorialMissionAI : MonoBehaviour
         agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
 
         anim.SetBool("Attacking", true);
+
+        currentHcLevel = 0f;
+        chTime = startingTime;
     }
 
     void Update()
@@ -63,8 +67,8 @@ public class _TutorialMissionAI : MonoBehaviour
         }
 
         Vector3 distanceToPlayer = transform.position - player.transform.position;
-        if (backDoor && distanceToPlayer.magnitude < 3f) { Attack(); }
-        if (backDoor && distanceToPlayer.magnitude > 3f) { AttackIdle(); }
+        if (!escape && backDoor && distanceToPlayer.magnitude < 3f) { Attack(); }
+        if (!escape && backDoor && distanceToPlayer.magnitude > 3f) { AttackIdle(); }
 
         Vector3 distanceToExit = transform.position - wayPoint2.transform.position;
         if (distanceToExit.magnitude < 0.2f) { AttackIdle(); escaped = true;}
@@ -78,11 +82,11 @@ public class _TutorialMissionAI : MonoBehaviour
 
         if (chAction)
         {
-            currentHcLevel = 0f;
-            chTime = startingTime;
+
             Handcuffs();
         }
 
+        if (playerObject.GetComponent<k_PlayerState>().currentHealth <= 70) { escape = true; }
 
     }
 
@@ -115,6 +119,7 @@ public class _TutorialMissionAI : MonoBehaviour
 
     public void RunToExit()
     {
+        gameObject.GetComponent<NavMeshAgent>().isStopped = false;
         anim.SetBool("Running", true);
         anim.SetBool("Attacking", false);
         agent.SetDestination(wayPoint2.transform.position);
@@ -123,6 +128,11 @@ public class _TutorialMissionAI : MonoBehaviour
 
     public void Handcuffs()
     {
+
+        gameObject.GetComponent<NavMeshAgent>().isStopped = true;
+
+        anim.SetBool("Running", false);
+        anim.SetBool("Attacking", false);
         anim.SetBool("Handcuffing", true);
         handcuffBar.fillAmount = currentHcLevel / maxHcLevel;
 
@@ -156,10 +166,13 @@ public class _TutorialMissionAI : MonoBehaviour
         anim.SetBool("Handcuffing", false);
         handcuffBarUI.SetActive(false);
         chAction = false;
+        currentHcLevel = 0f;
+        chTime = startingTime;
     }
 
     void Handcuff_Success()
     {
+
         handcuffBarUI.SetActive(false);
         chAction = false;
 
@@ -172,6 +185,10 @@ public class _TutorialMissionAI : MonoBehaviour
 
     void Stun()
     {
+        gameObject.GetComponent<NavMeshAgent>().isStopped = true;
+
+        anim.SetBool("Running", false);
+        anim.SetBool("Attacking", false);
         anim.SetBool("Stun", true);
         stunTime -= 1 * Time.deltaTime;
         stunTimer.text = stunTime.ToString("0");

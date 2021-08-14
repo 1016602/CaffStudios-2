@@ -55,7 +55,8 @@ public class k_Handcuffs : MonoBehaviour
         {
             if (hit.collider.gameObject.tag == "Enemy")
             {
-                hit.collider.gameObject.GetComponent<k_EnemyStatsUI>().chAction = true;
+                //hit.collider.gameObject.GetComponent<k_EnemyStatsUI>().chAction = true;
+                hit.collider.gameObject.GetComponent<_TutorialMissionAI>().chAction = true;
             }
         }
     }
