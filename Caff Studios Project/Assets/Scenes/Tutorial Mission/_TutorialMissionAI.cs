@@ -67,8 +67,8 @@ public class _TutorialMissionAI : MonoBehaviour
         }
 
         Vector3 distanceToPlayer = transform.position - player.transform.position;
-        if (!escape && backDoor && distanceToPlayer.magnitude < 3f) { Attack(); }
-        if (!escape && backDoor && distanceToPlayer.magnitude > 3f) { AttackIdle(); }
+        if (!arrested && !escape && backDoor && distanceToPlayer.magnitude < 3f) { Attack(); }
+        if (!arrested && !escape && backDoor && distanceToPlayer.magnitude > 3f) { AttackIdle(); }
 
         Vector3 distanceToExit = transform.position - wayPoint2.transform.position;
         if (distanceToExit.magnitude < 0.2f) { AttackIdle(); escaped = true;}
@@ -159,6 +159,15 @@ public class _TutorialMissionAI : MonoBehaviour
             Handcuff_Success();
         }
 
+        if (arrested)
+        {
+            gameObject.GetComponent<NavMeshAgent>().isStopped = true;
+            anim.SetBool("Stun", false);
+            anim.SetBool("Handcuffing", false);
+            anim.SetBool("Attacking", false);
+            anim.SetBool("Arrest", true);
+        }
+
     }
 
     void Handcuff_Fail()
@@ -175,11 +184,7 @@ public class _TutorialMissionAI : MonoBehaviour
 
         handcuffBarUI.SetActive(false);
         chAction = false;
-
         arrested = true;
-        anim.SetBool("Stun", false);
-        anim.SetBool("Handcuffing", false);
-        anim.SetBool("Arrest", true);
     }
 
 
