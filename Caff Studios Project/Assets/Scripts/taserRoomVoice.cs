@@ -11,6 +11,7 @@ public class taserRoomVoice : MonoBehaviour
     public GameObject cuffAudio;
     public GameObject shoutAudio;
     public GameObject stunAudio;
+    public GameObject introAudio;
 
     // Update is called once per frame
     void Update()
@@ -19,13 +20,17 @@ public class taserRoomVoice : MonoBehaviour
         {
             cuffAudio.SetActive(true);
             //model.GetComponent<_TrainingModel1>().arrested = false;
-
+            Destroy(introAudio);
+            Destroy(shoutAudio);
+            Destroy(stunAudio);
         }
 
         if (model.GetComponent<_TrainingModel1>().stuning == true)
         {
             stunAudio.SetActive(true);
             //model.GetComponent<_TrainingModel1>().stuning = false;
+            Destroy(introAudio);
+            Destroy(shoutAudio);
 
         }
 
@@ -33,6 +38,7 @@ public class taserRoomVoice : MonoBehaviour
         {
             shoutAudio.SetActive(true);
             playerTaser.GetComponent<_ShootWarning>().shouted = false;
+            Destroy(introAudio);
         }
 
     }

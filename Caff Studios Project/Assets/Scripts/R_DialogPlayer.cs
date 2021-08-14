@@ -9,7 +9,7 @@ public class R_DialogPlayer : MonoBehaviour
     public GameObject playerHands;
     public GameObject cuffAudio;
     public GameObject shoutAudio;
- 
+    public GameObject introAudio;
 
     
 
@@ -19,6 +19,9 @@ public class R_DialogPlayer : MonoBehaviour
         if (model.GetComponent<_TrainingModel1>().arrested == true)
         {
             cuffAudio.SetActive(true);
+            Destroy(introAudio);
+            Destroy(shoutAudio);
+
             //model.GetComponent<_TrainingModel1>().arrested = false;
            
         }
@@ -26,6 +29,7 @@ public class R_DialogPlayer : MonoBehaviour
         if (playerHands.GetComponent<_Alert>().shouted == true)
         {
             shoutAudio.SetActive(true);
+            Destroy(introAudio);
             playerHands.GetComponent<_Alert>().shouted = false;
         }
 
