@@ -7,7 +7,7 @@ public class _ShootWarning : MonoBehaviour
 {
     public Camera fpsCam;
     public AudioSource shootWarningVoice;
-    //public GameObject checkList;
+    public GameObject checkList;
 
     public bool shouted = false;
 
@@ -28,7 +28,7 @@ public class _ShootWarning : MonoBehaviour
             {
                 shouted = true;
                 shootWarningVoice.Play();
-                //checkList.GetComponent<_TutorCheckList>().shootWarning = true;
+                checkList.GetComponent<_TutorCheckList>().shootWarning = true;
                 hit.collider.gameObject.GetComponent<_TutorialMissionAI>().shootWarned = true;
             }
 

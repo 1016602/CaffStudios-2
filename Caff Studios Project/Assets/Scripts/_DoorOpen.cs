@@ -17,6 +17,7 @@ public class _DoorOpen : MonoBehaviour
 
     void Start()
     {
+        
         anim = GetComponent<Animator>();
     }
 
@@ -28,18 +29,18 @@ public class _DoorOpen : MonoBehaviour
         if (doorLocked && playerCheck1) { lockIcon.SetActive(true); }
         if (doorLocked && playerCheck2) { lockIcon.SetActive(true); }
 
-        if (voiceDoor == true)
+        if (voiceDoor == true && doorLocked)
         {
-            
-                if (audioSource.isPlaying)
-                {
-                    doorLocked = true;
-                }
-                else
-                {
-                    doorLocked = false;
-                }
-            
+
+            if (audioSource.isPlaying)
+            {
+                doorLocked = true;
+            }
+            else
+            {
+                doorLocked = false;
+            }
+
         }
 
 
@@ -86,6 +87,7 @@ public class _DoorOpen : MonoBehaviour
         yield return new WaitForSeconds(2);
         anim.SetBool("CloseB", true);
         anim.SetBool("OpenB", false);
+     
     }
 
     IEnumerator DoorClosing2()
@@ -93,6 +95,7 @@ public class _DoorOpen : MonoBehaviour
         yield return new WaitForSeconds(2);
         anim.SetBool("CloseA", true);
         anim.SetBool("OpenA", false);
+       
     }
 
     void OnDrawGizmos()
