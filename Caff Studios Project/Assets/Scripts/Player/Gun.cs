@@ -52,7 +52,7 @@ public class Gun : MonoBehaviour
     {
         muzzleFlash.Play();
         gunShot.Play();
-
+        checkList.GetComponent<_TutorCheckList>().gunShoot = true;
         RaycastHit hit;
         if
         (Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, range))
