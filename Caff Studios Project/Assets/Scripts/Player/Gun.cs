@@ -50,10 +50,9 @@ public class Gun : MonoBehaviour
 
     void Shoot()
     {
-        checkList.GetComponent<_TutorCheckList>().gunShoot = true;
+        
         muzzleFlash.Play();
         gunShot.Play();
-        checkList.GetComponent<_TutorCheckList>().gunShoot = true;
         RaycastHit hit;
         if
         (Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, range))
@@ -75,5 +74,6 @@ public class Gun : MonoBehaviour
                 training = true;
             }
         }
+        checkList.GetComponent<_TutorCheckList>().gunShoot = true;
     }
 }
