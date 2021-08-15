@@ -14,9 +14,11 @@ public class _TutorMessage : MonoBehaviour
 
     public GameObject popUpUI;
 
+    public Animator anim;
+
     void Start()
     {
-        
+        anim = anim.GetComponent<Animator>();
     }
 
 
@@ -27,7 +29,8 @@ public class _TutorMessage : MonoBehaviour
             player.GetComponent<FirstPersonController>().m_WalkSpeed = 5;
             player.GetComponent<FirstPersonController>().m_RunSpeed = 8;
             player.GetComponent<FirstPersonController>().m_JumpSpeed = 5;
-            popUpUI.SetActive(false);
+
+            StartCoroutine(HideMessage());
         }
     }
     void OnTriggerEnter(Collider other)
@@ -40,8 +43,16 @@ public class _TutorMessage : MonoBehaviour
 
 
             popUpUI.SetActive(true);
+            anim.SetBool("up", true);
         }
     }
 
+    IEnumerator HideMessage()
+    {
+        anim.SetBool("down", true);
+        yield return new WaitForSeconds(1.5f);
+
+        Destroy(gameObject);
+    }
 
 }
