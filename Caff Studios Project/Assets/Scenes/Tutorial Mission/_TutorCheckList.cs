@@ -32,7 +32,7 @@ namespace MissionCheckList
             playerScore.text = score.ToString();
             if (score <= 0) { score = 0; }
 
-            if (arrested == true || Enemy.GetComponent<_TutorialMissionAI>().escaped)
+            if (arrested == true || Enemy.GetComponent<_TutorialMissionAI>().escaped || gunShoot == true)
             {
                 MissionResult();
             }
@@ -53,10 +53,6 @@ namespace MissionCheckList
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
             if (calculateScore == true) { ScoreCalculate(); }
-
-
-
-
         }
 
         public void ScoreCalculate()

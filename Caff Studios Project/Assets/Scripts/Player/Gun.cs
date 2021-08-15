@@ -33,7 +33,7 @@ public class Gun : MonoBehaviour
             Shoot();
             PlayerGun.Fire();
 
-            checkList.GetComponent<_TutorCheckList>().gunShoot = true;
+            
 
             if (PlayerGun.mag != 0)
             {
@@ -50,6 +50,7 @@ public class Gun : MonoBehaviour
 
     void Shoot()
     {
+        checkList.GetComponent<_TutorCheckList>().gunShoot = true;
         muzzleFlash.Play();
         gunShot.Play();
 

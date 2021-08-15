@@ -33230,6 +33230,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3569473169437659617, guid: 3089dea266790564fba60b4825b8112c, type: 3}
+      propertyPath: checkList
+      value: 
+      objectReference: {fileID: 1087693631}
     - target: {fileID: 3569473170617873321, guid: 3089dea266790564fba60b4825b8112c, type: 3}
       propertyPath: checkList
       value: 
