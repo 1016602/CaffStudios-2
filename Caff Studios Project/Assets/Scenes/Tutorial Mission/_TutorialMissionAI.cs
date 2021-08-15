@@ -88,6 +88,15 @@ public class _TutorialMissionAI : MonoBehaviour
 
         if (playerObject.GetComponent<k_PlayerState>().currentHealth <= 70) { escape = true; }
 
+        if (arrested)
+        {
+            gameObject.GetComponent<NavMeshAgent>().isStopped = true;
+            anim.SetBool("Stun", false);
+            anim.SetBool("Handcuffing", false);
+            anim.SetBool("Attacking", false);
+            anim.SetBool("Arrest", true);
+        }
+
     }
 
 
@@ -159,14 +168,7 @@ public class _TutorialMissionAI : MonoBehaviour
             Handcuff_Success();
         }
 
-        if (arrested)
-        {
-            gameObject.GetComponent<NavMeshAgent>().isStopped = true;
-            anim.SetBool("Stun", false);
-            anim.SetBool("Handcuffing", false);
-            anim.SetBool("Attacking", false);
-            anim.SetBool("Arrest", true);
-        }
+
 
     }
 
