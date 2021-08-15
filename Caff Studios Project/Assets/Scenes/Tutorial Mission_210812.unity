@@ -33241,7 +33241,7 @@ PrefabInstance:
     - target: {fileID: 3569473170231877444, guid: 3089dea266790564fba60b4825b8112c, type: 3}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 2c25b81f0c8742b4893b078e222369d3, type: 3}
+      objectReference: {fileID: 8300000, guid: e6419b56a370c8e4b847961b2e3491bc, type: 3}
     - target: {fileID: 3569473170602463298, guid: 3089dea266790564fba60b4825b8112c, type: 3}
       propertyPath: m_Volume
       value: 0.4
@@ -33249,7 +33249,7 @@ PrefabInstance:
     - target: {fileID: 3569473170602463298, guid: 3089dea266790564fba60b4825b8112c, type: 3}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 2c25b81f0c8742b4893b078e222369d3, type: 3}
+      objectReference: {fileID: 8300000, guid: e6419b56a370c8e4b847961b2e3491bc, type: 3}
     - target: {fileID: 3569473170617873321, guid: 3089dea266790564fba60b4825b8112c, type: 3}
       propertyPath: checkList
       value: 
@@ -33261,7 +33261,7 @@ PrefabInstance:
     - target: {fileID: 3569473170994878677, guid: 3089dea266790564fba60b4825b8112c, type: 3}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 2c25b81f0c8742b4893b078e222369d3, type: 3}
+      objectReference: {fileID: 8300000, guid: e6419b56a370c8e4b847961b2e3491bc, type: 3}
     - target: {fileID: 3569473171343558286, guid: 3089dea266790564fba60b4825b8112c, type: 3}
       propertyPath: checkList
       value: 
