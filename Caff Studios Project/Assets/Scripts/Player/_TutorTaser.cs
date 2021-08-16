@@ -41,7 +41,7 @@ public class _TutorTaser : MonoBehaviour
             {
                 hit.collider.gameObject.GetComponent<_TrainingModel1>().stuning = true;
                 GameObject impactGo = Instantiate(impactEffect, hit.point, Quaternion.LookRotation(hit.normal));
-                Destroy(impactGo, 4f);
+                Destroy(impactGo, 0.1f);
             }
         }
 

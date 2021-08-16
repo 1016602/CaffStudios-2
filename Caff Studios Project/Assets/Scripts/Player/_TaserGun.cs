@@ -41,14 +41,14 @@ public class _TaserGun : MonoBehaviour
                 //hit.collider.gameObject.GetComponent<k_EnemyStatsUI>().stuning = true;
                 hit.collider.gameObject.GetComponent<_TutorialMissionAI>().stunned = true;
                 GameObject impactGo = Instantiate(impactEffect, hit.point, Quaternion.LookRotation(hit.normal));
-                Destroy(impactGo, 4f);
+                Destroy(impactGo, 0.1f);
             }
 
             if (hit.collider.gameObject.tag == "Civilian")
             {
                 hit.collider.gameObject.GetComponent<_NPCTutor1>().stun = true;
                 GameObject impactGo = Instantiate(impactEffect, hit.point, Quaternion.LookRotation(hit.normal));
-                Destroy(impactGo, 4f);
+                Destroy(impactGo, 0.1f);
             }
         }
 
