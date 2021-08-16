@@ -1,124 +1,350 @@
 fileFormatVersion: 2
 guid: 405e700aa3476b744a47dd65d70f0aa4
 ModelImporter:
-  serializedVersion: 23
-  fileIDToRecycleName:
-    100000: Bars
-    100002: Bars Mid
-    100004: Bench Top
-    100006: Bench_Sake_01
-    100008: Bench_Sake_02
-    100010: Gate
-    100012: Grate.001
-    100014: Partition_Pole_Sake_01
-    100016: Partition_Sake_01
-    100018: Partition_Sake_02
-    100020: Partition_Sake_03
-    100022: Plank Base
-    100024: //RootNode
-    100026: Seat Back
-    100028: Side_01
-    100030: Side_01.001
-    100032: Side_02.001
-    100034: Table Top
-    100036: Table Top.001
-    100038: Table_Sake_02
-    100040: Table_Sake_03
-    100042: Top Plank
-    100044: Wall Panel_Sake_01
-    400000: Bars
-    400002: Bars Mid
-    400004: Bench Top
-    400006: Bench_Sake_01
-    400008: Bench_Sake_02
-    400010: Gate
-    400012: Grate.001
-    400014: Partition_Pole_Sake_01
-    400016: Partition_Sake_01
-    400018: Partition_Sake_02
-    400020: Partition_Sake_03
-    400022: Plank Base
-    400024: //RootNode
-    400026: Seat Back
-    400028: Side_01
-    400030: Side_01.001
-    400032: Side_02.001
-    400034: Table Top
-    400036: Table Top.001
-    400038: Table_Sake_02
-    400040: Table_Sake_03
-    400042: Top Plank
-    400044: Wall Panel_Sake_01
-    2100000: No Name
-    2300000: Bars
-    2300002: Bars Mid
-    2300004: Bench Top
-    2300006: Bench_Sake_01
-    2300008: Bench_Sake_02
-    2300010: Gate
-    2300012: Grate.001
-    2300014: Partition_Pole_Sake_01
-    2300016: Partition_Sake_01
-    2300018: Partition_Sake_02
-    2300020: Partition_Sake_03
-    2300022: Plank Base
-    2300024: Seat Back
-    2300026: Side_01
-    2300028: Side_01.001
-    2300030: Side_02.001
-    2300032: Table Top
-    2300034: Table Top.001
-    2300036: Table_Sake_02
-    2300038: Table_Sake_03
-    2300040: Top Plank
-    2300042: Wall Panel_Sake_01
-    3300000: Bars
-    3300002: Bars Mid
-    3300004: Bench Top
-    3300006: Bench_Sake_01
-    3300008: Bench_Sake_02
-    3300010: Gate
-    3300012: Grate.001
-    3300014: Partition_Pole_Sake_01
-    3300016: Partition_Sake_01
-    3300018: Partition_Sake_02
-    3300020: Partition_Sake_03
-    3300022: Plank Base
-    3300024: Seat Back
-    3300026: Side_01
-    3300028: Side_01.001
-    3300030: Side_02.001
-    3300032: Table Top
-    3300034: Table Top.001
-    3300036: Table_Sake_02
-    3300038: Table_Sake_03
-    3300040: Top Plank
-    3300042: Wall Panel_Sake_01
-    4300000: Partition_Sake_02
-    4300002: Side_01.001
-    4300004: Side_02.001
-    4300006: Bench_Sake_02
-    4300008: Seat Back
-    4300010: Table_Sake_03
-    4300012: Table Top.001
-    4300014: Bench_Sake_01
-    4300016: Bench Top
-    4300018: Table_Sake_02
-    4300020: Table Top
-    4300022: Partition_Sake_01
-    4300024: Gate
-    4300026: Bars
-    4300028: Partition_Pole_Sake_01
-    4300030: Wall Panel_Sake_01
-    4300032: Side_01
-    4300034: Partition_Sake_03
-    4300036: Top Plank
-    4300038: Grate.001
-    4300040: Plank Base
-    4300042: Bars Mid
+  serializedVersion: 20200
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: Bars
+  - first:
+      1: 100002
+    second: Bars Mid
+  - first:
+      1: 100004
+    second: Bench Top
+  - first:
+      1: 100006
+    second: Bench_Sake_01
+  - first:
+      1: 100008
+    second: Bench_Sake_02
+  - first:
+      1: 100010
+    second: Gate
+  - first:
+      1: 100012
+    second: Grate.001
+  - first:
+      1: 100014
+    second: Partition_Pole_Sake_01
+  - first:
+      1: 100016
+    second: Partition_Sake_01
+  - first:
+      1: 100018
+    second: Partition_Sake_02
+  - first:
+      1: 100020
+    second: Partition_Sake_03
+  - first:
+      1: 100022
+    second: Plank Base
+  - first:
+      1: 100024
+    second: //RootNode
+  - first:
+      1: 100026
+    second: Seat Back
+  - first:
+      1: 100028
+    second: Side_01
+  - first:
+      1: 100030
+    second: Side_01.001
+  - first:
+      1: 100032
+    second: Side_02.001
+  - first:
+      1: 100034
+    second: Table Top
+  - first:
+      1: 100036
+    second: Table Top.001
+  - first:
+      1: 100038
+    second: Table_Sake_02
+  - first:
+      1: 100040
+    second: Table_Sake_03
+  - first:
+      1: 100042
+    second: Top Plank
+  - first:
+      1: 100044
+    second: Wall Panel_Sake_01
+  - first:
+      4: 400000
+    second: Bars
+  - first:
+      4: 400002
+    second: Bars Mid
+  - first:
+      4: 400004
+    second: Bench Top
+  - first:
+      4: 400006
+    second: Bench_Sake_01
+  - first:
+      4: 400008
+    second: Bench_Sake_02
+  - first:
+      4: 400010
+    second: Gate
+  - first:
+      4: 400012
+    second: Grate.001
+  - first:
+      4: 400014
+    second: Partition_Pole_Sake_01
+  - first:
+      4: 400016
+    second: Partition_Sake_01
+  - first:
+      4: 400018
+    second: Partition_Sake_02
+  - first:
+      4: 400020
+    second: Partition_Sake_03
+  - first:
+      4: 400022
+    second: Plank Base
+  - first:
+      4: 400024
+    second: //RootNode
+  - first:
+      4: 400026
+    second: Seat Back
+  - first:
+      4: 400028
+    second: Side_01
+  - first:
+      4: 400030
+    second: Side_01.001
+  - first:
+      4: 400032
+    second: Side_02.001
+  - first:
+      4: 400034
+    second: Table Top
+  - first:
+      4: 400036
+    second: Table Top.001
+  - first:
+      4: 400038
+    second: Table_Sake_02
+  - first:
+      4: 400040
+    second: Table_Sake_03
+  - first:
+      4: 400042
+    second: Top Plank
+  - first:
+      4: 400044
+    second: Wall Panel_Sake_01
+  - first:
+      21: 2100000
+    second: No Name
+  - first:
+      23: 2300000
+    second: Bars
+  - first:
+      23: 2300002
+    second: Bars Mid
+  - first:
+      23: 2300004
+    second: Bench Top
+  - first:
+      23: 2300006
+    second: Bench_Sake_01
+  - first:
+      23: 2300008
+    second: Bench_Sake_02
+  - first:
+      23: 2300010
+    second: Gate
+  - first:
+      23: 2300012
+    second: Grate.001
+  - first:
+      23: 2300014
+    second: Partition_Pole_Sake_01
+  - first:
+      23: 2300016
+    second: Partition_Sake_01
+  - first:
+      23: 2300018
+    second: Partition_Sake_02
+  - first:
+      23: 2300020
+    second: Partition_Sake_03
+  - first:
+      23: 2300022
+    second: Plank Base
+  - first:
+      23: 2300024
+    second: Seat Back
+  - first:
+      23: 2300026
+    second: Side_01
+  - first:
+      23: 2300028
+    second: Side_01.001
+  - first:
+      23: 2300030
+    second: Side_02.001
+  - first:
+      23: 2300032
+    second: Table Top
+  - first:
+      23: 2300034
+    second: Table Top.001
+  - first:
+      23: 2300036
+    second: Table_Sake_02
+  - first:
+      23: 2300038
+    second: Table_Sake_03
+  - first:
+      23: 2300040
+    second: Top Plank
+  - first:
+      23: 2300042
+    second: Wall Panel_Sake_01
+  - first:
+      33: 3300000
+    second: Bars
+  - first:
+      33: 3300002
+    second: Bars Mid
+  - first:
+      33: 3300004
+    second: Bench Top
+  - first:
+      33: 3300006
+    second: Bench_Sake_01
+  - first:
+      33: 3300008
+    second: Bench_Sake_02
+  - first:
+      33: 3300010
+    second: Gate
+  - first:
+      33: 3300012
+    second: Grate.001
+  - first:
+      33: 3300014
+    second: Partition_Pole_Sake_01
+  - first:
+      33: 3300016
+    second: Partition_Sake_01
+  - first:
+      33: 3300018
+    second: Partition_Sake_02
+  - first:
+      33: 3300020
+    second: Partition_Sake_03
+  - first:
+      33: 3300022
+    second: Plank Base
+  - first:
+      33: 3300024
+    second: Seat Back
+  - first:
+      33: 3300026
+    second: Side_01
+  - first:
+      33: 3300028
+    second: Side_01.001
+  - first:
+      33: 3300030
+    second: Side_02.001
+  - first:
+      33: 3300032
+    second: Table Top
+  - first:
+      33: 3300034
+    second: Table Top.001
+  - first:
+      33: 3300036
+    second: Table_Sake_02
+  - first:
+      33: 3300038
+    second: Table_Sake_03
+  - first:
+      33: 3300040
+    second: Top Plank
+  - first:
+      33: 3300042
+    second: Wall Panel_Sake_01
+  - first:
+      43: 4300000
+    second: Partition_Sake_02
+  - first:
+      43: 4300002
+    second: Side_01.001
+  - first:
+      43: 4300004
+    second: Side_02.001
+  - first:
+      43: 4300006
+    second: Bench_Sake_02
+  - first:
+      43: 4300008
+    second: Seat Back
+  - first:
+      43: 4300010
+    second: Table_Sake_03
+  - first:
+      43: 4300012
+    second: Table Top.001
+  - first:
+      43: 4300014
+    second: Bench_Sake_01
+  - first:
+      43: 4300016
+    second: Bench Top
+  - first:
+      43: 4300018
+    second: Table_Sake_02
+  - first:
+      43: 4300020
+    second: Table Top
+  - first:
+      43: 4300022
+    second: Partition_Sake_01
+  - first:
+      43: 4300024
+    second: Gate
+  - first:
+      43: 4300026
+    second: Bars
+  - first:
+      43: 4300028
+    second: Partition_Pole_Sake_01
+  - first:
+      43: 4300030
+    second: Wall Panel_Sake_01
+  - first:
+      43: 4300032
+    second: Side_01
+  - first:
+      43: 4300034
+    second: Partition_Sake_03
+  - first:
+      43: 4300036
+    second: Top Plank
+  - first:
+      43: 4300038
+    second: Grate.001
+  - first:
+      43: 4300040
+    second: Plank Base
+  - first:
+      43: 4300042
+    second: Bars Mid
   externalObjects: {}
   materials:
-    importMaterials: 1
+    materialImportMode: 1
     materialName: 0
     materialSearch: 1
     materialLocation: 1
@@ -150,34 +376,45 @@ ModelImporter:
     globalScale: 1
     meshCompression: 0
     addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
     importLights: 1
+    fileIdsGeneration: 1
     swapUVChannels: 0
-    generateSecondaryUV: 0
+    generateSecondaryUV: 1
     useFileUnits: 1
-    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
+    bakeAxisConversion: 0
     preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
     indexFormat: 0
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 0
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
     secondaryUVPackMargin: 4
     useFileScale: 1
-    previousCalculatedGlobalScale: 1
-    hasPreviousCalculatedGlobalScale: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
     tangentImportMode: 3
     normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
   importAnimation: 1
-  copyAvatar: 0
   humanDescription:
-    serializedVersion: 2
+    serializedVersion: 3
     human: []
     skeleton: []
     armTwist: 0.5
@@ -187,14 +424,17 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
+    globalScale: 1
     rootMotionBoneName: 
-    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 0
   humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 0
   additionalBone: 0
   userData: 
   assetBundleName: 
