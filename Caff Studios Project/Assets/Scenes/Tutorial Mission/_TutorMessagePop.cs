@@ -15,13 +15,14 @@ public class _TutorMessagePop : MonoBehaviour
         
     }
 
-    void OnTriggerEnter(Collider other)
+    void OnTriggerStay(Collider other)
     {
         if (other.gameObject.tag == "Player")
         {
             popUpUI.SetActive(true);
 
             anim.SetBool("up", true);
+            anim.SetBool("down", false);
         }
     }
 
@@ -29,12 +30,14 @@ public class _TutorMessagePop : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            
+            anim.SetBool("down", true);
+            anim.SetBool("up", false);
 
-            StartCoroutine(HideMessage());
+            //StartCoroutine(HideMessage());
         }
     }
 
+    /*
     IEnumerator HideMessage()
     {
         anim.SetBool("down", true);
@@ -42,4 +45,5 @@ public class _TutorMessagePop : MonoBehaviour
 
         popUpUI.SetActive(false);
     }
+    */
 }
