@@ -18,9 +18,11 @@ namespace MissionCheckList
         public GameObject NPC;
 
         public GameObject ResultUI;
+        public GameObject Pass;
+        public GameObject Fail;
 
         public int score;
-        public TMP_Text playerScore;
+        //public TMP_Text playerScore;
 
         void Start()
         {
@@ -29,10 +31,20 @@ namespace MissionCheckList
 
         void Update()
         {
-            playerScore.text = score.ToString();
-            if (score <= 0) { score = 0; }
+            //playerScore.text = score.ToString();
+            if (score < 0) 
+            { 
+                Fail.SetActive(true);
+                //score = 0; 
+            }
 
-            if (arrested == true || Enemy.GetComponent<_TutorialMissionAI>().escaped || gunShoot == true)
+            if (score > 0)
+            {
+                Pass.SetActive(true);
+                //score = 0; 
+            }
+
+            if (arrested == true || aiEscape == true || gunShoot == true)
             {
                 MissionResult();
             }
@@ -61,11 +73,11 @@ namespace MissionCheckList
             if (alerted == true) { score += 5; }
             if (shootWarning == true) { score += 5; }
             if (nPC == true) { score += 10; }
-            if (arrested == true) { score += 10; }
+            if (arrested == true) { score += 50; }
 
-            if (gunShoot == true) { score -= 20; }
+            if (gunShoot == true) { score -= 50; }
             if (shootTaser == true) { score -= 5; }
-            if (aiEscape == true) { score -= 10; }
+            if (aiEscape == true) { score -= 50; }
             
 
             calculateScore = false;
