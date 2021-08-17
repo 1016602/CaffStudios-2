@@ -33,7 +33,7 @@ public class _EquipTrigger : MonoBehaviour
             if (Gun)
             {
                 playerUI.GetComponent<_EquipTutorUI>().training3 = true;
-                inGameMessage.text = message2;
+                inGameMessage.text = message;
             }
         }
     }
@@ -51,7 +51,7 @@ public class _EquipTrigger : MonoBehaviour
             if (Gun)
             {
                 playerUI.GetComponent<_EquipTutorUI>().training3 = false;
-                inGameMessage.text = message2;
+                inGameMessage.text = message;
             }
         }
     }
