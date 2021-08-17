@@ -1,209 +1,605 @@
 fileFormatVersion: 2
 guid: 111827f73e785fd49af5ddbd6ec08172
 ModelImporter:
-  serializedVersion: 23
-  fileIDToRecycleName:
-    100000: Arm Cushion
-    100002: Arm Cushion.001
-    100004: Arm Cushion.002
-    100006: Arm Cushion.003
-    100008: Arm Rest
-    100010: Arm Rest.001
-    100012: Bar
-    100014: //RootNode
-    100016: Barbers Chair Base.001
-    100018: Barbers Table
-    100020: Bulb
-    100022: Bulb.001
-    100024: Cabinet
-    100026: Cushion
-    100028: Cushion.001
-    100030: Door
-    100032: Drawer
-    100034: Drawer.001
-    100036: Drawer.002
-    100038: Glass
-    100040: Handle
-    100042: Handle.001
-    100044: Handle.002
-    100046: Head Cushion
-    100048: knob
-    100050: Leg Rest
-    100052: Leg Rest Cushion
-    100054: Mirror
-    100056: Pivot Lamp
-    100058: Pivot Lamp.001
-    100060: Pole.003
-    100062: Seat Base
-    100064: Shelf
-    100066: Shelf.001
-    100068: Socket
-    100070: Socket.001
-    100072: Swivel Lamp
-    100074: Swivel Lamp.001
-    100076: Table Pole
-    100078: Table Pole.001
-    400000: Arm Cushion
-    400002: Arm Cushion.001
-    400004: Arm Cushion.002
-    400006: Arm Cushion.003
-    400008: Arm Rest
-    400010: Arm Rest.001
-    400012: Bar
-    400014: //RootNode
-    400016: Barbers Chair Base.001
-    400018: Barbers Table
-    400020: Bulb
-    400022: Bulb.001
-    400024: Cabinet
-    400026: Cushion
-    400028: Cushion.001
-    400030: Door
-    400032: Drawer
-    400034: Drawer.001
-    400036: Drawer.002
-    400038: Glass
-    400040: Handle
-    400042: Handle.001
-    400044: Handle.002
-    400046: Head Cushion
-    400048: knob
-    400050: Leg Rest
-    400052: Leg Rest Cushion
-    400054: Mirror
-    400056: Pivot Lamp
-    400058: Pivot Lamp.001
-    400060: Pole.003
-    400062: Seat Base
-    400064: Shelf
-    400066: Shelf.001
-    400068: Socket
-    400070: Socket.001
-    400072: Swivel Lamp
-    400074: Swivel Lamp.001
-    400076: Table Pole
-    400078: Table Pole.001
-    2100000: No Name
-    2300000: Arm Cushion
-    2300002: Arm Cushion.001
-    2300004: Arm Cushion.002
-    2300006: Arm Cushion.003
-    2300008: Arm Rest
-    2300010: Arm Rest.001
-    2300012: Bar
-    2300014: Barbers Chair Base.001
-    2300016: Barbers Table
-    2300018: Bulb
-    2300020: Bulb.001
-    2300022: Cabinet
-    2300024: Cushion
-    2300026: Cushion.001
-    2300028: Door
-    2300030: Drawer
-    2300032: Drawer.001
-    2300034: Drawer.002
-    2300036: Glass
-    2300038: Handle
-    2300040: Handle.001
-    2300042: Handle.002
-    2300044: Head Cushion
-    2300046: knob
-    2300048: Leg Rest
-    2300050: Leg Rest Cushion
-    2300052: Mirror
-    2300054: Pivot Lamp
-    2300056: Pivot Lamp.001
-    2300058: Pole.003
-    2300060: Seat Base
-    2300062: Shelf
-    2300064: Shelf.001
-    2300066: Socket
-    2300068: Socket.001
-    2300070: Swivel Lamp
-    2300072: Swivel Lamp.001
-    2300074: Table Pole
-    2300076: Table Pole.001
-    3300000: Arm Cushion
-    3300002: Arm Cushion.001
-    3300004: Arm Cushion.002
-    3300006: Arm Cushion.003
-    3300008: Arm Rest
-    3300010: Arm Rest.001
-    3300012: Bar
-    3300014: Barbers Chair Base.001
-    3300016: Barbers Table
-    3300018: Bulb
-    3300020: Bulb.001
-    3300022: Cabinet
-    3300024: Cushion
-    3300026: Cushion.001
-    3300028: Door
-    3300030: Drawer
-    3300032: Drawer.001
-    3300034: Drawer.002
-    3300036: Glass
-    3300038: Handle
-    3300040: Handle.001
-    3300042: Handle.002
-    3300044: Head Cushion
-    3300046: knob
-    3300048: Leg Rest
-    3300050: Leg Rest Cushion
-    3300052: Mirror
-    3300054: Pivot Lamp
-    3300056: Pivot Lamp.001
-    3300058: Pole.003
-    3300060: Seat Base
-    3300062: Shelf
-    3300064: Shelf.001
-    3300066: Socket
-    3300068: Socket.001
-    3300070: Swivel Lamp
-    3300072: Swivel Lamp.001
-    3300074: Table Pole
-    3300076: Table Pole.001
-    4300000: Barbers Chair Base.001
-    4300002: Seat Base
-    4300004: Arm Rest.001
-    4300006: Arm Cushion.002
-    4300008: Arm Cushion.001
-    4300010: Arm Rest
-    4300012: Arm Cushion
-    4300014: Arm Cushion.003
-    4300016: Leg Rest
-    4300018: Cushion
-    4300020: Bar
-    4300022: Head Cushion
-    4300024: Cushion.001
-    4300026: Leg Rest Cushion
-    4300028: Pole.003
-    4300030: Cabinet
-    4300032: Shelf.001
-    4300034: Door
-    4300036: knob
-    4300038: Glass
-    4300040: Shelf
-    4300042: Barbers Table
-    4300044: Table Pole
-    4300046: Swivel Lamp.001
-    4300048: Pivot Lamp.001
-    4300050: Bulb.001
-    4300052: Socket.001
-    4300054: Swivel Lamp
-    4300056: Pivot Lamp
-    4300058: Socket
-    4300060: Bulb
-    4300062: Drawer
-    4300064: Handle.002
-    4300066: Drawer.001
-    4300068: Handle.001
-    4300070: Drawer.002
-    4300072: Handle
-    4300074: Mirror
-    4300076: Table Pole.001
+  serializedVersion: 20200
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: Arm Cushion
+  - first:
+      1: 100002
+    second: Arm Cushion.001
+  - first:
+      1: 100004
+    second: Arm Cushion.002
+  - first:
+      1: 100006
+    second: Arm Cushion.003
+  - first:
+      1: 100008
+    second: Arm Rest
+  - first:
+      1: 100010
+    second: Arm Rest.001
+  - first:
+      1: 100012
+    second: Bar
+  - first:
+      1: 100014
+    second: //RootNode
+  - first:
+      1: 100016
+    second: Barbers Chair Base.001
+  - first:
+      1: 100018
+    second: Barbers Table
+  - first:
+      1: 100020
+    second: Bulb
+  - first:
+      1: 100022
+    second: Bulb.001
+  - first:
+      1: 100024
+    second: Cabinet
+  - first:
+      1: 100026
+    second: Cushion
+  - first:
+      1: 100028
+    second: Cushion.001
+  - first:
+      1: 100030
+    second: Door
+  - first:
+      1: 100032
+    second: Drawer
+  - first:
+      1: 100034
+    second: Drawer.001
+  - first:
+      1: 100036
+    second: Drawer.002
+  - first:
+      1: 100038
+    second: Glass
+  - first:
+      1: 100040
+    second: Handle
+  - first:
+      1: 100042
+    second: Handle.001
+  - first:
+      1: 100044
+    second: Handle.002
+  - first:
+      1: 100046
+    second: Head Cushion
+  - first:
+      1: 100048
+    second: knob
+  - first:
+      1: 100050
+    second: Leg Rest
+  - first:
+      1: 100052
+    second: Leg Rest Cushion
+  - first:
+      1: 100054
+    second: Mirror
+  - first:
+      1: 100056
+    second: Pivot Lamp
+  - first:
+      1: 100058
+    second: Pivot Lamp.001
+  - first:
+      1: 100060
+    second: Pole.003
+  - first:
+      1: 100062
+    second: Seat Base
+  - first:
+      1: 100064
+    second: Shelf
+  - first:
+      1: 100066
+    second: Shelf.001
+  - first:
+      1: 100068
+    second: Socket
+  - first:
+      1: 100070
+    second: Socket.001
+  - first:
+      1: 100072
+    second: Swivel Lamp
+  - first:
+      1: 100074
+    second: Swivel Lamp.001
+  - first:
+      1: 100076
+    second: Table Pole
+  - first:
+      1: 100078
+    second: Table Pole.001
+  - first:
+      4: 400000
+    second: Arm Cushion
+  - first:
+      4: 400002
+    second: Arm Cushion.001
+  - first:
+      4: 400004
+    second: Arm Cushion.002
+  - first:
+      4: 400006
+    second: Arm Cushion.003
+  - first:
+      4: 400008
+    second: Arm Rest
+  - first:
+      4: 400010
+    second: Arm Rest.001
+  - first:
+      4: 400012
+    second: Bar
+  - first:
+      4: 400014
+    second: //RootNode
+  - first:
+      4: 400016
+    second: Barbers Chair Base.001
+  - first:
+      4: 400018
+    second: Barbers Table
+  - first:
+      4: 400020
+    second: Bulb
+  - first:
+      4: 400022
+    second: Bulb.001
+  - first:
+      4: 400024
+    second: Cabinet
+  - first:
+      4: 400026
+    second: Cushion
+  - first:
+      4: 400028
+    second: Cushion.001
+  - first:
+      4: 400030
+    second: Door
+  - first:
+      4: 400032
+    second: Drawer
+  - first:
+      4: 400034
+    second: Drawer.001
+  - first:
+      4: 400036
+    second: Drawer.002
+  - first:
+      4: 400038
+    second: Glass
+  - first:
+      4: 400040
+    second: Handle
+  - first:
+      4: 400042
+    second: Handle.001
+  - first:
+      4: 400044
+    second: Handle.002
+  - first:
+      4: 400046
+    second: Head Cushion
+  - first:
+      4: 400048
+    second: knob
+  - first:
+      4: 400050
+    second: Leg Rest
+  - first:
+      4: 400052
+    second: Leg Rest Cushion
+  - first:
+      4: 400054
+    second: Mirror
+  - first:
+      4: 400056
+    second: Pivot Lamp
+  - first:
+      4: 400058
+    second: Pivot Lamp.001
+  - first:
+      4: 400060
+    second: Pole.003
+  - first:
+      4: 400062
+    second: Seat Base
+  - first:
+      4: 400064
+    second: Shelf
+  - first:
+      4: 400066
+    second: Shelf.001
+  - first:
+      4: 400068
+    second: Socket
+  - first:
+      4: 400070
+    second: Socket.001
+  - first:
+      4: 400072
+    second: Swivel Lamp
+  - first:
+      4: 400074
+    second: Swivel Lamp.001
+  - first:
+      4: 400076
+    second: Table Pole
+  - first:
+      4: 400078
+    second: Table Pole.001
+  - first:
+      21: 2100000
+    second: No Name
+  - first:
+      23: 2300000
+    second: Arm Cushion
+  - first:
+      23: 2300002
+    second: Arm Cushion.001
+  - first:
+      23: 2300004
+    second: Arm Cushion.002
+  - first:
+      23: 2300006
+    second: Arm Cushion.003
+  - first:
+      23: 2300008
+    second: Arm Rest
+  - first:
+      23: 2300010
+    second: Arm Rest.001
+  - first:
+      23: 2300012
+    second: Bar
+  - first:
+      23: 2300014
+    second: Barbers Chair Base.001
+  - first:
+      23: 2300016
+    second: Barbers Table
+  - first:
+      23: 2300018
+    second: Bulb
+  - first:
+      23: 2300020
+    second: Bulb.001
+  - first:
+      23: 2300022
+    second: Cabinet
+  - first:
+      23: 2300024
+    second: Cushion
+  - first:
+      23: 2300026
+    second: Cushion.001
+  - first:
+      23: 2300028
+    second: Door
+  - first:
+      23: 2300030
+    second: Drawer
+  - first:
+      23: 2300032
+    second: Drawer.001
+  - first:
+      23: 2300034
+    second: Drawer.002
+  - first:
+      23: 2300036
+    second: Glass
+  - first:
+      23: 2300038
+    second: Handle
+  - first:
+      23: 2300040
+    second: Handle.001
+  - first:
+      23: 2300042
+    second: Handle.002
+  - first:
+      23: 2300044
+    second: Head Cushion
+  - first:
+      23: 2300046
+    second: knob
+  - first:
+      23: 2300048
+    second: Leg Rest
+  - first:
+      23: 2300050
+    second: Leg Rest Cushion
+  - first:
+      23: 2300052
+    second: Mirror
+  - first:
+      23: 2300054
+    second: Pivot Lamp
+  - first:
+      23: 2300056
+    second: Pivot Lamp.001
+  - first:
+      23: 2300058
+    second: Pole.003
+  - first:
+      23: 2300060
+    second: Seat Base
+  - first:
+      23: 2300062
+    second: Shelf
+  - first:
+      23: 2300064
+    second: Shelf.001
+  - first:
+      23: 2300066
+    second: Socket
+  - first:
+      23: 2300068
+    second: Socket.001
+  - first:
+      23: 2300070
+    second: Swivel Lamp
+  - first:
+      23: 2300072
+    second: Swivel Lamp.001
+  - first:
+      23: 2300074
+    second: Table Pole
+  - first:
+      23: 2300076
+    second: Table Pole.001
+  - first:
+      33: 3300000
+    second: Arm Cushion
+  - first:
+      33: 3300002
+    second: Arm Cushion.001
+  - first:
+      33: 3300004
+    second: Arm Cushion.002
+  - first:
+      33: 3300006
+    second: Arm Cushion.003
+  - first:
+      33: 3300008
+    second: Arm Rest
+  - first:
+      33: 3300010
+    second: Arm Rest.001
+  - first:
+      33: 3300012
+    second: Bar
+  - first:
+      33: 3300014
+    second: Barbers Chair Base.001
+  - first:
+      33: 3300016
+    second: Barbers Table
+  - first:
+      33: 3300018
+    second: Bulb
+  - first:
+      33: 3300020
+    second: Bulb.001
+  - first:
+      33: 3300022
+    second: Cabinet
+  - first:
+      33: 3300024
+    second: Cushion
+  - first:
+      33: 3300026
+    second: Cushion.001
+  - first:
+      33: 3300028
+    second: Door
+  - first:
+      33: 3300030
+    second: Drawer
+  - first:
+      33: 3300032
+    second: Drawer.001
+  - first:
+      33: 3300034
+    second: Drawer.002
+  - first:
+      33: 3300036
+    second: Glass
+  - first:
+      33: 3300038
+    second: Handle
+  - first:
+      33: 3300040
+    second: Handle.001
+  - first:
+      33: 3300042
+    second: Handle.002
+  - first:
+      33: 3300044
+    second: Head Cushion
+  - first:
+      33: 3300046
+    second: knob
+  - first:
+      33: 3300048
+    second: Leg Rest
+  - first:
+      33: 3300050
+    second: Leg Rest Cushion
+  - first:
+      33: 3300052
+    second: Mirror
+  - first:
+      33: 3300054
+    second: Pivot Lamp
+  - first:
+      33: 3300056
+    second: Pivot Lamp.001
+  - first:
+      33: 3300058
+    second: Pole.003
+  - first:
+      33: 3300060
+    second: Seat Base
+  - first:
+      33: 3300062
+    second: Shelf
+  - first:
+      33: 3300064
+    second: Shelf.001
+  - first:
+      33: 3300066
+    second: Socket
+  - first:
+      33: 3300068
+    second: Socket.001
+  - first:
+      33: 3300070
+    second: Swivel Lamp
+  - first:
+      33: 3300072
+    second: Swivel Lamp.001
+  - first:
+      33: 3300074
+    second: Table Pole
+  - first:
+      33: 3300076
+    second: Table Pole.001
+  - first:
+      43: 4300000
+    second: Barbers Chair Base.001
+  - first:
+      43: 4300002
+    second: Seat Base
+  - first:
+      43: 4300004
+    second: Arm Rest.001
+  - first:
+      43: 4300006
+    second: Arm Cushion.002
+  - first:
+      43: 4300008
+    second: Arm Cushion.001
+  - first:
+      43: 4300010
+    second: Arm Rest
+  - first:
+      43: 4300012
+    second: Arm Cushion
+  - first:
+      43: 4300014
+    second: Arm Cushion.003
+  - first:
+      43: 4300016
+    second: Leg Rest
+  - first:
+      43: 4300018
+    second: Cushion
+  - first:
+      43: 4300020
+    second: Bar
+  - first:
+      43: 4300022
+    second: Head Cushion
+  - first:
+      43: 4300024
+    second: Cushion.001
+  - first:
+      43: 4300026
+    second: Leg Rest Cushion
+  - first:
+      43: 4300028
+    second: Pole.003
+  - first:
+      43: 4300030
+    second: Cabinet
+  - first:
+      43: 4300032
+    second: Shelf.001
+  - first:
+      43: 4300034
+    second: Door
+  - first:
+      43: 4300036
+    second: knob
+  - first:
+      43: 4300038
+    second: Glass
+  - first:
+      43: 4300040
+    second: Shelf
+  - first:
+      43: 4300042
+    second: Barbers Table
+  - first:
+      43: 4300044
+    second: Table Pole
+  - first:
+      43: 4300046
+    second: Swivel Lamp.001
+  - first:
+      43: 4300048
+    second: Pivot Lamp.001
+  - first:
+      43: 4300050
+    second: Bulb.001
+  - first:
+      43: 4300052
+    second: Socket.001
+  - first:
+      43: 4300054
+    second: Swivel Lamp
+  - first:
+      43: 4300056
+    second: Pivot Lamp
+  - first:
+      43: 4300058
+    second: Socket
+  - first:
+      43: 4300060
+    second: Bulb
+  - first:
+      43: 4300062
+    second: Drawer
+  - first:
+      43: 4300064
+    second: Handle.002
+  - first:
+      43: 4300066
+    second: Drawer.001
+  - first:
+      43: 4300068
+    second: Handle.001
+  - first:
+      43: 4300070
+    second: Drawer.002
+  - first:
+      43: 4300072
+    second: Handle
+  - first:
+      43: 4300074
+    second: Mirror
+  - first:
+      43: 4300076
+    second: Table Pole.001
   externalObjects: {}
   materials:
-    importMaterials: 1
+    materialImportMode: 1
     materialName: 0
     materialSearch: 1
     materialLocation: 1
@@ -235,34 +631,45 @@ ModelImporter:
     globalScale: 1
     meshCompression: 0
     addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
     importLights: 1
+    fileIdsGeneration: 1
     swapUVChannels: 0
-    generateSecondaryUV: 0
+    generateSecondaryUV: 1
     useFileUnits: 1
-    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
+    bakeAxisConversion: 0
     preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
     indexFormat: 0
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 0
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
     secondaryUVPackMargin: 4
     useFileScale: 1
-    previousCalculatedGlobalScale: 1
-    hasPreviousCalculatedGlobalScale: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
     tangentImportMode: 3
     normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
   importAnimation: 1
-  copyAvatar: 0
   humanDescription:
-    serializedVersion: 2
+    serializedVersion: 3
     human: []
     skeleton: []
     armTwist: 0.5
@@ -272,14 +679,17 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
+    globalScale: 1
     rootMotionBoneName: 
-    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 0
   humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 0
   additionalBone: 0
   userData: 
   assetBundleName: 
