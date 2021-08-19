@@ -5,7 +5,7 @@ using TutorLevel;
 
 public class _TutorDoorUnlock : MonoBehaviour
 {
-    public bool T1, T2, T3, T3a, T3b;
+    public bool T1, T2, T3;
     public GameObject model;
     public GameObject door;
 
@@ -41,24 +41,12 @@ public class _TutorDoorUnlock : MonoBehaviour
 
         if (T3)
         {
-            if (model.GetComponent<_ShootWarning>().shouted == true)
-            {
-                T3a = true;
-
-            }
-
-            if (model.GetComponent<Gun>().training == true)
-            {
-                T3b = true;
-
-            }
-
-            if (T3a == true && T3b == true)
+            if (model.GetComponent<_ShootWarning>().shouted == true && model.GetComponent<Gun>().training == true)
             {
                 door.GetComponent<_DoorOpen>().doorLocked = false;
                 TaskUI3.SetActive(true);
             }
-
+           
         }
         
     }
