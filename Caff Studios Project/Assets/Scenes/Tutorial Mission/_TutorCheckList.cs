@@ -21,27 +21,41 @@ namespace MissionCheckList
         public GameObject Pass;
         public GameObject Fail;
 
+        public Animator anim;
         public int score;
         //public TMP_Text playerScore;
 
         void Start()
         {
             calculateScore = true;
+            anim = anim.GetComponent<Animator>();
         }
 
         void Update()
         {
             //playerScore.text = score.ToString();
-            if (score < 0) 
+            if (score == 40) 
             { 
-                Fail.SetActive(true);
-                //score = 0; 
+                Pass.SetActive(true);
+                anim.SetBool("L3", true);
             }
 
-            if (score > 0)
+            if (score == 35)
             {
                 Pass.SetActive(true);
-                //score = 0; 
+                anim.SetBool("L2", true);
+            }
+
+            if (score == 25)
+            {
+                Pass.SetActive(true);
+                anim.SetBool("L1", true);
+            }
+
+            if (score < 0)
+            {
+                Fail.SetActive(true);
+                
             }
 
             if (arrested == true || aiEscape == true || gunShoot == true)
@@ -70,10 +84,10 @@ namespace MissionCheckList
         public void ScoreCalculate()
         {
 
-            if (alerted == true) { score += 5; }
-            if (shootWarning == true) { score += 5; }
+            if (alerted == true) { score += 10; }
+            if (shootWarning == true) { score += 10; }
             if (nPC == true) { score += 10; }
-            if (arrested == true) { score += 50; }
+            if (arrested == true) { score += 10; }
 
             if (gunShoot == true) { score -= 50; }
             if (shootTaser == true) { score -= 5; }
