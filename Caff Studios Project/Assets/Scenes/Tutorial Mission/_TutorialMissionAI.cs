@@ -86,6 +86,11 @@ public class _TutorialMissionAI : MonoBehaviour
             Handcuffs();
         }
 
+        if (stunned && chAction)
+        {
+            Handcuff_Success();
+        }
+
         if (playerObject.GetComponent<k_PlayerState>().currentHealth <= 70) { escape = true; }
 
         if (arrested)

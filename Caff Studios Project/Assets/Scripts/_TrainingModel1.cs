@@ -121,6 +121,7 @@ namespace TutorLevel
                 anim.SetBool("Stun", false);
                 Start();
             }
+
         }
 
         IEnumerator _Arrest()

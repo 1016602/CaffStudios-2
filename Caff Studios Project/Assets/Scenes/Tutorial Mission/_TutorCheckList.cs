@@ -46,7 +46,7 @@ namespace MissionCheckList
                 anim.SetBool("L2", true);
             }
 
-            if (score == 25)
+            if (score < 35 && score > 5)
             {
                 Pass.SetActive(true);
                 anim.SetBool("L1", true);
@@ -70,6 +70,7 @@ namespace MissionCheckList
 
             if (Enemy.GetComponent<_TutorialMissionAI>().stunned == true) { shootTaser = true; }
             if (Enemy.GetComponent<_TutorialMissionAI>().escaped == true) { aiEscape = true; }
+            if (NPC.GetComponent<_NPCTutor1>().helped == true) { nPC = true; }
         }
 
         public void MissionResult()
